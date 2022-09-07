@@ -1,0 +1,24 @@
+p span{
+    color: red;
+    
+    } /* selektor potomka*/
+    span{
+    color: green;
+    }
+    
+    body{
+        font-size: 30px;
+    }
+    
+    p>span{
+        color: blue;
+    }/* selektor dziecka*/
+    
+    b+i{
+        font-size: 44px;
+        color: brown;
+    }/* selektor braci*/
+    
+    span[name] {
+        background-color: chartreuse;
+    } /* selektor atrybutu*/
