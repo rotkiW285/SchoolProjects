@@ -4,37 +4,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="shortcut icon" type="image/png" href="./assets/favicon.png">
-    <title>Chrome Dino</title>
-    <style>
-      * {
-        margin: 0;
-        padding: 0;
-      }
-
-      html,
-      body {
-        height: 100%;
-      }
-
-      body {
-        align-items: center;
-        background-color: #f7f7f7;
-        display: flex;
-        justify-content: center;
-      }
-
-      @keyframes octocat-wave {
-        0%, 100% { transform: rotate(0) }
-        20%, 60% { transform: rotate(-25deg) }
-        40%, 80% { transform: rotate(10deg) }
-      }
-
-      .github-corner:hover .octo-arm {
-        animation: octocat-wave 560ms ease-in-out;
-      }
-    </style>
+    <title>ChromeZaur Project</title>
+    <link rel="stylesheet" href="style.css">
   </head>
   <body>
+    <!-- wszystko do /svg jest cornerem autora -->
     <!-- https://github.com/tholman/github-corners -->
     <a href="https://github.com/chrisdothtml/chrome-dino" class="github-corner" aria-label="View source on Github">
       <svg width="80" height="80" viewBox="0 0 250 250" style="fill:#24292e; color:#f7f7f7; position: absolute; top: 0; border: 0; right: 0;" aria-hidden="true">
@@ -45,5 +19,16 @@
     </a>
 
     <script type="module" src="./lib/index.js"></script>
+
+
+    <!-- Skrypt do przekierowania dla urzadzen mobilnych -->
+    <script type="text/javascript">
+      <!--
+      if (screen.width <= 699) {
+      document.location = "mobile.html";
+      }
+      //-->
+      </script>
+      
   </body>
 </html>
