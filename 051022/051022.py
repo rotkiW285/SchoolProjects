@@ -20,4 +20,4 @@ def szukaj(tekst, wzorzec):
     if==T[i]:
         return False
     return T
-print(szukaj("kartkatura","ka"))
+print(szukaj("karykatura","RA"))
