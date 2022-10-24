@@ -1,0 +1,44 @@
+p{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 70px;
+    color: red;
+    text-align: center;
+    text-decoration: none;
+}
+
+div{
+font-size: 25px;
+}
+
+img{
+    width: 200px;
+    height: 200px;
+}
+
+#blok2{
+clear: right;
+    /* to co bedzie - np left to ten obiekt bedzie po lewej stronie, none nie bedzie cos tam */
+     /* zeby to sie nie stosowalo do tego float, musi byc ta sama wartosc co przy float */
+     /* da sie to zrobic lepiej flex-boxami, miej w to wyjebane i bedzie ci dane */
+}
+
+#obraz1{
+float: right;
+}
+
+#obraz2{
+float: left;
+clear: right;
+}
+
+.kolumna{
+    width: 48%;
+    float: left;
+    border: 6px solid blue;
+}
+
+#stopka{
+clear: both;
+text-align: center;
+border: 3px solid green;
+}
