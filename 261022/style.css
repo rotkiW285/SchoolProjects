@@ -1,0 +1,55 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+#id1{
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+    display: inline;
+    visibility: hidden;  /* */
+}
+
+#id2{
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    display: inline-block;
+}
+
+img{
+height: 200px;
+width: 200px;
+display: block;
+}
+
+ul, ul li{
+    display: block;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+ul{
+width: 150px;
+}
+
+a{
+    display: block;
+    text-decoration: none;
+    color: white;
+    background-color: blue;
+    border: 2px solid red;
+    padding: 10px;
+    margin-top: 5px;
+    text-align: left;
+    transition-duration: 3s, 4s;
+    transition-property: background-color, text-allign;
+}
+
+a:hover{
+    background-color: green;
+    text-align: right;
+
+}
