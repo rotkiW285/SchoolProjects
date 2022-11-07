@@ -1,0 +1,30 @@
+#menu, #menu ul{
+    display: block;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+#menu li{
+    float: left;
+    position: relative;
+    margin-right: 5px;
+}
+
+#menu ul li{
+    clear: both;
+}
+
+#menu li:hover ul li{
+    visibility: visible;
+}
+
+#menu a, #menu li:hover li a{
+    display: block;
+text-decoration: none;
+border: 3px solid blue;
+width: 100px;
+background-color: red;
+padding: 5px;
+color: white;
+}
