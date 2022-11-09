@@ -94,18 +94,12 @@ a{
     height: 800px;
     display: flex;
     flex-direction: row;
-      justify-content: center;
     padding-top: 20px;
-    border: 3px solid black;
 
 
-}
-#LewyPanel img{
-    width: 200px;
-    height: 300px;
-    border: 3px dotted black;
 
 }
+
 #Mpanel{
     padding: 0 10px 0;
     background-color: #00eeff;
@@ -117,10 +111,10 @@ a{
 
 #Mpanel div{
 height: 60px;
-width: 190px;
+width: 200px;
 background-color: lawngreen;
 float: left;
-padding: 10px;
+text-align: center;
 margin: 2px;
 }
 
@@ -131,8 +125,6 @@ margin: 2px;
     display: flex;
     flex-direction: row;
       justify-content: center;	
-      border: 3px solid black;
-      @media(max-width: 1100px)
 }
 
 .footer {
@@ -144,3 +136,12 @@ margin: 2px;
     color: white;
     text-align: center;
   }
+
+.pierwszyzlewych{
+height: 100px;
+width: 100px;
+background-color: red;
+margin: 10px;
+}
+
+.drugizlewych
