@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #menu, #menu ul {
+            display: block;
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+        #menu li{
+            float: left;
+            margin-right: 10px;
+            position: relative;
+        }
+        #menu ul li{
+            clear: both;
+            visibility: hidden;
+        }
+        #menu li:hover ul li{
+            visibility: visible;
+        }
+       #menu a,  #menu li:hover li a{
+            width: 120px;
+            text-decoration: none;
+            background-color: rgb(255, 234, 0);
+            color: black;
+            border: 3px solid rgb(0, 0, 0);
+            padding: 5px;
+            display: block;
+        
+        }
+        #menu li:hover a, #menu li:hover li:hover a {
+            background-color: saddlebrown;
+            text-align: center;
+
+        }
+
+    </style>
+</head>
+<body>
+    <ul id="menu">
+        <li><a href="">TEKST</a></li>
+        <li><a href="">TEKST</a>
+            <ul>
+                <li><a href="https://www.youtube.com/premium">TEKST</a></li>
+                <li><a href="">TEKST</a></li>
+            </ul>
+        </li>
+        <li><a href="https://www.youtube.com/premium">TEKST</a></li>
+    </ul>
+</body>
+</html>
+
