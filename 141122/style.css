@@ -20,15 +20,14 @@ body{
 #menu ol{
     display: flex;
     justify-content: center;
-      
+    list-style: none;
 
 }
 ol{
-    list-style: none;
     flex-direction: row;
     justify-content: center;
 }
-li{
+#menu li{
     padding: 0 10px 0;
 }
 
@@ -42,18 +41,13 @@ li{
 }
 
 .opcja1{
-    background-color: red;
-    background-position: 0px -15px;
-}
+    background-color: red;}
 
 .opcja2{
-    background-color: green; 
-    background-position: 0px 0px;
-}
+    background-color: green; }
+    
 .opcja3{
-    background-color: blue;
-    background-position: 0px -55px;   
-}
+    background-color: blue;}
 
 a{
     text-decoration: none;
@@ -71,7 +65,7 @@ a{
 #LewyPanel{
     background-color: #00c3ff;
     width: 33%;
-    height: 800px;
+    height: 780px;
     flex-direction: row;
     padding-top: 20px;
     position: relative;
@@ -105,8 +99,6 @@ a{
     justify-content: center;	
 }
 
-
-
 .pierwszyzlewych{
     height: 100px;
     width: 100px;
@@ -127,10 +119,9 @@ a{
 
 #stopka{
     width: 100%;
-    height: 70px;    
+    height: 60px;    
     left: 0;
     bottom: 0;
-    width: 100%;
     background-color: red;
     color: white;
     text-align: center;
