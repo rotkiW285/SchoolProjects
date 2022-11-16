@@ -1,0 +1,28 @@
+ul, ul li{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    display: block;
+}
+
+ul li{
+    float: left;
+    margin-right: 10px;
+}
+
+a{
+    display: block;
+    width: 150px;
+    position: relative;
+    text-decoration: none;
+    border: 3px solid blue;
+    background-color: red;
+    color: white;
+    padding: 5px;
+}
+
+ul a:hover{
+    background-color: yellow;
+    text-align: center;
+}
+

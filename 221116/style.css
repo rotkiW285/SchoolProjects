@@ -1,0 +1,18 @@
+div{
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+    /* transition-property: width; */
+    transition-duration: 2s, 3s;
+    transition-timing-function: ease-in;
+
+    -webkit-
+
+}
+
+div:hover{
+height: 500px;
+width: 500px;
+background-image: url(chad.jpg);
+text
+}
