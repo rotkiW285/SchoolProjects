@@ -1,0 +1,287 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+
+*{
+    margin: 0;
+}
+
+
+#container{
+    width: 100vw;
+    height: 100vh;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    flex-direction: column;
+
+    font-family: 'Inter', sans-serif;
+}
+
+nav{
+
+    height: 10vh;
+    width: 100vw;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    border-bottom: 0.3vh solid black;
+}
+
+nav > p{
+   font-weight: 700; 
+   font-size: 5vh;
+}
+nav > p:hover{
+   cursor: pointer;
+}
+
+#cart{
+    width: 5vh;
+    height: 5vh;
+
+    background-image: url(img/cart.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+#cart:hover{
+    cursor: pointer;
+}
+
+#item-amount{
+    position: relative;
+
+    bottom: 2vh;
+    left: 5vh;
+    font-size: 2vh;
+    font-weight: 600;
+
+    color: red;
+    
+}
+
+
+main{
+    width: 70vw;
+    height: 85vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+
+    overflow-y: scroll;
+
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+main::-webkit-scrollbar {
+    display: none;
+  }
+
+.item{
+    height: 50vh;
+    width: 40vh;
+
+    margin: 2vh;
+
+    background-color: black;
+
+    display: flex;
+    align-items: flex-end;
+}
+
+#item1{
+    background: url(img/bluzapa.png);
+    background-size: 90%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.hover1{
+    width: 40vh;
+    height: 50vh;
+
+    z-index: 3;
+}
+
+
+.hover1:hover{
+    background-image: url(img/addtocart.png);
+    background-size: 40%;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 70%;
+    cursor: pointer;
+}
+
+.hover1:hover > #item1-info{
+    display: block;
+}
+
+#item1-info{
+    height: 10vh;
+    width: 100%;
+
+    margin-top: 40vh;
+    background-color: black;
+    opacity: 90%;
+    text-align: center;
+    line-height: 5vh;
+
+    display: none;
+    color: white;
+    font-size: 2vh;
+}
+
+
+#item2{
+    background: url(img/trap-star-koszulka.jpg);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#item3{
+    background: url(img/czapka.jpg);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#item4{
+    background: url(img/spodnie.jpg);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#item5{
+    background: url(img/deska.jpg);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#item6{
+    background: url(img/kurtka.jpg);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.example::-webkit-scrollbar {
+  display: none;
+}
+
+footer{
+    height: 5vh;
+    width: 100vw;
+
+    text-align: center;
+    line-height: 5vh;
+    font-size: 2vh;
+
+    border-top: 0.2vh solid black;
+
+    
+}
+
+#cartPage{
+    display: none;
+    
+    flex-direction: column;
+
+    width: 85vw;
+    height: 85vh;
+    overflow-y: scroll;
+ 
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    
+}
+#cartPage::-webkit-scrollbar {
+    display: none;
+  }
+.cartItem{
+    height: 20vh;
+    width: 60vh;
+
+    margin: 2vh; 
+
+    border-bottom: 0.2vh solid black;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+
+    font-size: 2vh;
+
+}
+
+.cartItem > img{
+    height: 15vh;
+}
+
+#cart1Item{
+    display: none;
+}
+#cart2Item{
+    display: none;
+}
+#cart3Item{
+    display: none;
+}
+#cart4Item{
+    display: none;
+}
+#cart5Item{
+    display: none;
+}
+#cart6Item{
+    display: none;
+}
+
+#total{
+    position: absolute;
+    bottom: 20vh;
+    right: 40vh;
+
+    font-size: 3vh;
+    font-weight: 600;
+}
+
+#checkout{
+    position: absolute;
+    bottom: 12vh;
+    right: 39vh;
+
+    width: 15vh;
+    height: 5vh;
+    background-color: red;
+
+    color: white;
+    line-height: 5vh;
+    text-align: center;
+    font-size: 2vh;
+}
+
+#checkout:hover{
+    transform: scale(1.01);
+    color: lightgray;
+
+    cursor: pointer;
+}
+
+#choinka{
+    height: 9vh;
+    width: 9vh;
+    position: absolute;
+    left: 33vh;
+    top: 0.5vh;
+
+    background-image: url(img/choinka.png);
+    background-size: contain;
+}
