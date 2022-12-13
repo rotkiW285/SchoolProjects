@@ -1,5 +1,51 @@
 #id1{
-    width: 1
-    background-color: ;
-
+    width: 50px;
+    height: 50px;
+    animation-name: anima;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    border-radius: 40%;
+    position: absolute;
+    left: 300px;
+    transform-origin: 0% 200%;
+    transform-origin: 0% 400%;
+    transform-origin: 0% 600%;
+    transform-origin: 0% 800%;
 }
+
+#id2{
+    width: 50px;
+    height: 50px;
+    animation-name: animaa;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    border-radius: 40%;
+    position: absolute;
+    left: 300px;
+    transform-origin: 0% 800%;
+    transform-origin: 0% 600%;
+    transform-origin: 0% 400%;
+    transform-origin: 0% 200%;
+}
+
+
+@keyframes anima{
+    0%{
+    transform: rotate(0deg);
+    transform: rotate(360deg);
+    }
+}
+
+@keyframes animaa{
+    0%{
+    transform: rotate(0deg);
+    transform: rotate(-360deg);
+    }
+}
+
+.jeden{top: 200px; background-color: red;}
+.dwa{top: 300px; background-color: green;}
+.trzy{top: 400px; background-color: blue;}
+.cztery{top: 500px; background-color: black;}
