@@ -10,7 +10,7 @@
     position: relative;
     height: 800px;
     width: 500px;
-    border: 7px solid black;
+    border: 5px solid black;
     background-image: url(tlo.png);
     overflow: hidden;
     background-size: cover;
@@ -57,7 +57,7 @@
     50%{left: -400px;}
     60%{left: -300px;}
     75%{left: -200px;}
-    100%{left: -160px;}
+    100%{left: -165px;}
 }
 
 #main{
