@@ -4,6 +4,7 @@
     text-decoration: none;
     align-items: center;
     font-family: fantasy;
+    background-color: #2b2b2b;
 }
 
 #body{
@@ -19,7 +20,7 @@
 #head{
     position: absolute;
     font-size: 30px;
-    color: yellow;
+    color: #00ff6a;
     top: 35px;
     left: 500px;
     animation-name: header;
@@ -35,8 +36,8 @@
     30%{left: -100px;}
     40%{left: -50px;}
     50%{left: 0px;}
-    60%{left: 100px;}
-    100%{left: 130px;}
+    60%{left: 80px;}
+    100%{left: 125px;}
   
 }
 
@@ -84,13 +85,13 @@
 }
 #tekst{
     display: block;
-    color: #0066ff;
+    color: #00ffd5;
 }
 
 #polecam {
     position: absolute;
     display: block;
-    color: #ff006a;
+    color: #cf075a;
     margin-top: 700px;
     font-size: 24px;
     animation-name: polecanko;
