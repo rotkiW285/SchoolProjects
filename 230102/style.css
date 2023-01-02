@@ -7,15 +7,23 @@ overflow: hidden;
     width: 100%;
     background-image: url(gura.jpg);
     padding: 5px;
+    display: block;
+    position: relative;
+}
+
+.navi a{
+    position: absolute;
+    height: 100%;
+    display: block;
 }
 
 body{
     background-image: url(tlo.png);
-background-repeat: no-repeat;
-height: 1080px;
+    background-repeat: no-repeat;
+    height: 1080px;
 }
 
-.jeden{
+.zyczy{
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     color: white;
     animation-name: animatxt;
@@ -50,19 +58,28 @@ height: 1080px;
 
 .imgright{
     float: right;
-    height: 100px;
-    width: 100px;
-}
-}
-
-.imgright img{
-    height: 100px;
-    width: 100px;
+    animation-name: animaright;
+    animation-duration: 4s;
+    animation-iteration-count:  infinite;
 }
 
 
 @keyframes animaright{
     0%{transform: translate(0px, 0px);}
-    50%{transform: translate(800px, 0px);}
+    50%{transform: translate(0px, 400px);}
+    100%{transform: translate(0px, 0px)}
+}
+
+.snowflake{
+    margin-left: 400px;
+    animation-name: animacenter;
+    animation-duration: 2s;
+    animation-iteration-count:  infinite;  
+}
+
+@keyframes animacenter{
+    0%{transform: translate(0px, 0px);}
+    25%{transform: translate(200px, 0px);}
+    50%{transform: translate(0px, 400px);}
     100%{transform: translate(0px, 0px)}
 }
