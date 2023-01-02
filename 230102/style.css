@@ -5,7 +5,6 @@ overflow: hidden;
 .navi{
     height: 100px;
     width: 100%;
-    background-image: url(gura.jpg);
     padding: 5px;
     display: block;
     position: relative;
