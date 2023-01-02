@@ -26,14 +26,14 @@ body{
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     color: white;
     animation-name: animatxt;
-    animation-duration: 4s;
+    animation-duration: 5s;
     animation-iteration-count:  infinite;
     font-size: 24pt;
 }
 
 .miko{
-    width: 250px;
-    height: 250px;
+    width: 350px;
+    height: 350px;
     animation-name: anima;
     animation-duration: 7s;
     animation-iteration-count:  infinite;
