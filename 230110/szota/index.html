@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test</title>
+
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js"></script>
+</head>
+<body>
+    <nav>Test</nav>
+    <div id="main">
+        <form name="test" onsubmit="return validateForm()" method="post">
+            <div id="q1">1. Który format pliku jest formatem rastrowym?</div><br>
+            <input type="radio" id="que1" name="que1" value="1">
+            <label for="html">TIFF</label><br>
+
+            <input type="radio" id="que1" name="que1" value="0">
+            <label for="html">CDR</label><br>
+
+            <input type="radio" id="que1" name="que1" value="0">
+            <label for="html">SWF</label><br>
+
+            <input type="radio" id="que1" name="que1" value="0">
+            <label for="html">SVG</label><br><br>
+            
+                <div id="q1">2. Modelem barw opisującym kolor z użyciem stożka przestrzeni barw jest: </div><br>
+                <input type="radio" id="que1" name="que2" value="0">
+                <label for="html">CIE</label><br>
+
+                <input type="radio" id="que1" name="que2" value="0">
+                <label for="html">CMY</label><br>
+
+                <input type="radio" id="que1" name="que2" value="0">
+                <label for="html">CMYK</label><br>
+
+                <input type="radio" id="que1" name="que2" value="1">
+                <label for="html">HSV</label><br><br>
+
+            <div id="q1">3. Kolorem o barwie niebieskiej jest kolor: </div><br>
+            <input type="radio" id="que1" name="que3" value="0">
+            <label for="html">#FF00FF</label><br>
+
+            <input type="radio" id="que1" name="que3" value="0">
+            <label for="html">#FF0000</label><br>
+
+            <input type="radio" id="que1" name="que3" value="0">
+            <label for="html">#00FF00</label><br>
+
+            <input type="radio" id="que1" name="que3" value="1">
+            <label for="html">#0000FF</label><br><br>
+
+                <div id="q1">4. Jak ma na nazwisko Daniel?: </div><br>
+                <input type="text" id="que4" name="que4"><br><br>
+            
+                
+        </form>
+        <div id="koniec" onClick="validate()">Zakończ test</div>
+        
+    </div>
+    <div id="wynik" style="display: none;">wynik</div>
+</body>
+</html>
