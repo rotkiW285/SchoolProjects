@@ -1,31 +1,5 @@
-#container{
-    background-color: gray;
-    height: 200px;
-    padding: 20px;
-    display: flex;
-    flex-wrap: wrap;    /* zawijanie wierszy, w przypadku przepelmnienia */
-    justify-content: space-around;  /* space between, center, flex-start, flex-end */
-    align-items: flex-start;    /* center, flex-end, flex-start, streatch */
-}
-
-.flex-item{
-    height: 50px;
-    width: 50px;
-    border: 3px solid black;
-}
-
-.green{
-background-color: green;
-}
-
-.blue{
-background-color: blue;
-}
-
-.yellow{
-background-color: yellow;
-}
-
-.red{
-background-color: red;
-}
+body{
+    background-color: #1E1E1E;
+    margin: 0;
+    overflow: hidden;
+    background-repeat: no-repeat;
