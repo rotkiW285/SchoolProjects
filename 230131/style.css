@@ -1,31 +1,45 @@
 #container{
     background-color: gray;
-    height: 200px;
     padding: 20px;
+    height: 200px;
     display: flex;
-    flex-wrap: wrap;    /* zawijanie wierszy, w przypadku przepelmnienia */
+    /*flex-wrap:wrap; /*zawijanie wierszy w przypadku przepelnienia*/
     justify-content: space-around;  /* space between, center, flex-start, flex-end */
-    align-items: flex-start;    /* center, flex-end, flex-start, streatch */
+    /* align-items: flex-start; */
+    /*flex-end -do konca strony ustawa
+    flex-start wartosc domyslna
+    center wysrodkowanie 
+    space-beewen przydatne do menu ustawia rowne odleglosci
+    space-around troche lepsze do menu daje rowne odleslosic nawet z margnesem do kawedzi strony
+    streatch 
+    */
+
 }
 
 .flex-item{
-    height: 50px;
     width: 50px;
-    border: 3px solid black;
+    height: 50px; 
 }
 
 .green{
-background-color: green;
+    background-color: green;
+    align-self: flex-end;
 }
 
 .blue{
-background-color: blue;
+    background-color: blue;
+    align-self: stretch;
+    order: 3;
+    flex-shrink: 3; /* bloczek ma sie skurczyc 3 razy zeby zrobic miejsce */
 }
 
 .yellow{
-background-color: yellow;
+    background-color: yellow;
+    align-self: flex-start;
+    order: -1;
 }
 
 .red{
-background-color: red;
+    background-color: red;
+    /* flex-grow: 3;  obiekt zwieksza sie min x razy wypelniajacy minimalna szerokosc czy jakos tak */
 }
