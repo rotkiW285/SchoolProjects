@@ -1,13 +1,64 @@
 *{
-    background-color: #2b2b2b;
-    margin: 0;
-    padding: 0;
+    /* margin: 0;
+    padding: 0; */
 }
 
-nav{
+#nav{
+    background-color: gray;
+    padding: 20px;
+    height: 100px;
     display: flex;
+    justify-content: space-around; 
 }
 
-div{  /* temp */
+.navblocks {
 background-color: yellow;
+width: 200px;
+height: 100px;
+}
+
+#section{
+width: 100%;
+border: 3px solid green;
+height: 500px;
+display: flex;
+flex-direction: row;
+}
+
+.sleft{
+    width: 50%;
+height: 100%;
+}
+
+.inleft{
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+}
+
+.sright{
+    width: 50%;
+    height: 100%;
+}
+
+
+.unders{
+    justify-content: space-between;
+padding: 10px;
+background-color: ;
+}
+
+
+
+
+
+
+
+
+
+
+/* temp */
+div{
+
+border: 1px solid black;
 }
