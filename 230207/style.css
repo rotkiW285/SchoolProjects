@@ -9,6 +9,7 @@
     height: 100px;
     display: flex;
     justify-content: space-around; 
+    width: 100%;
 }
 
 .navblocks {
@@ -26,7 +27,7 @@ flex-direction: row;
 }
 
 .sleft{
-    width: 50%;
+width: 50%;
 height: 100%;
 }
 
@@ -34,6 +35,10 @@ height: 100%;
     width: 75%;
     display: flex;
     flex-direction: column;
+    height: 100px;
+    width: 400px;
+    padding: 20px;
+    align-items: center;
 }
 
 .sright{
@@ -41,17 +46,36 @@ height: 100%;
     height: 100%;
 }
 
-
-.unders{
-    justify-content: space-between;
-padding: 10px;
-background-color: ;
+#undersec{
+background-color: gray;
+padding: 20px;
+height: 100px;
+display: flex;
+justify-content: space-around; 
+width: 100%;
 }
 
 
+.unders{
+background-color: yellow;
+width: 600px;
+height: 100px;
+}
 
+#footer{
+border: 3px solid purple;
+    padding: 20px;
+    height: 100px;
+    display: flex;
+    justify-content: space-around; 
+    width: 100%;
+}
 
-
+.foot{
+    background-color: yellow;
+    width: 700px;
+    height: 100px;  
+}
 
 
 
@@ -59,6 +83,5 @@ background-color: ;
 
 /* temp */
 div{
-
 border: 1px solid black;
 }
