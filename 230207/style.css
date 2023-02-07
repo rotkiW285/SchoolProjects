@@ -1,6 +1,6 @@
 *{
-    /* margin: 0;
-    padding: 0; */
+    margin: 0;
+    /* padding: 0;  */
 }
 
 #nav{
@@ -14,14 +14,14 @@
 
 .navblocks {
 background-color: yellow;
-width: 200px;
+width: 160px;
 height: 100px;
 }
 
 #section{
 width: 100%;
 border: 3px solid green;
-height: 500px;
+height: 400px;
 display: flex;
 flex-direction: row;
 }
@@ -35,15 +35,29 @@ height: 100%;
     width: 75%;
     display: flex;
     flex-direction: column;
-    height: 100px;
+    height: 50px;
     width: 400px;
     padding: 20px;
-    align-items: center;
+    margin: 20px;
+    margin-left: 130px;
 }
 
 .sright{
     width: 50%;
     height: 100%;
+}
+
+.inright {
+    height: 50px;
+    width: 200px;
+    background-color: lawngreen;
+    text-align: center;
+    margin: 2px;
+    display: flex;
+    flex-direction: row;
+    padding: 20px;
+    margin: 20px;
+
 }
 
 #undersec{
@@ -58,7 +72,7 @@ width: 100%;
 
 .unders{
 background-color: yellow;
-width: 600px;
+width: 500px;
 height: 100px;
 }
 
@@ -73,7 +87,7 @@ border: 3px solid purple;
 
 .foot{
     background-color: yellow;
-    width: 700px;
+    width: 400px;
     height: 100px;  
 }
 
