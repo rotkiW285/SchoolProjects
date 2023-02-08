@@ -45,19 +45,24 @@ height: 100%;
 .sright{
     width: 50%;
     height: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border: none;
 }
 
 .inright {
     height: 50px;
-    width: 200px;
+    width: 150px;
     background-color: lawngreen;
     margin: 2px;
-    display: flex;
     padding: 20px;
     margin: 20px;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    align-items: center;
 
 }
 
