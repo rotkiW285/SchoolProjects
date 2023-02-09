@@ -1,2 +1,2 @@
 # SchoolProjects
-Some weird things i do during lessons
+Some weird things I do during lessons
