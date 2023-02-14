@@ -1,5 +1,10 @@
 *{
 font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+width: 1366px;
+}
+
+a:link, a:visited{
+    color: brown;
 }
 
 .nav{
@@ -11,15 +16,15 @@ justify-content: space-between;
 }
 
 .nav-element{
-    height: 50px;
-    width: 200px;
-    margin: 20px;
-    text-align: center;
+height: 50px;
+width: 200px;
+margin: 20px;
+text-align: center;
 
 }
 
 .obraz{
-background-image: url(kaletanczyk.jpg);
+background-image: url(gd.jpg);
 height: 100px;
 }
 
@@ -35,42 +40,45 @@ width: 30%;
 height: 100%;
 display: flex;
 flex-direction: column;
-margin-right: 0;
 background-color: red;
+justify-content: center;
 }
 
 .in-left-main{
-    margin: 20px;
-    height: 50px;
-    width: 300px;
-    background-color: blue;
+margin: 20px;
+height: 50px;
+width: 350px;
+background-color: blue;
+    
 }
 
 .right-main{
-    width: 70%;
-    background-color: green;
-    height: 600px;
-    display: flex;
-    flex-direction: row;
+width: 70%;
+background-color: green;
+height: 600px;
+display: flex;
+flex-direction: row;
 }
 
 .in-right-main{
-    height: 100%;
-    width: 33.33%;
-    background-color: aquamarine;
+height: 100%;
+width: 33.33%;
+background-color: aquamarine;
 }
 
 .in-right-col{
-    height: 50px;
-    width: 300px;
-    display: flex;
-    margin: 50px;
+height: 50px;
+width: 200px;
+display: flex;
+margin: 50px;
 }
 
 .ring{
-    border-radius: 50%;
-    height: 100px;
-    width: 100px;
+border-radius: 50%;
+height: 100px;
+width: 100px;
+margin-left: 110px;
+background-image: url(kaletanczyk.jpg);
 }
 
 .footer{
@@ -79,7 +87,7 @@ text-align: center;
 }
 
 .footer p{
-    margin: 40px;
+margin: 40px;
 }
 
 div{
