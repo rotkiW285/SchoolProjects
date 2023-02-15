@@ -9,7 +9,7 @@ a:link, a:visited{
     color: #ffffff;
 }
 
-.nav-element:hover, .in-left-main p:hover{
+a:hover, .nav-element:hover, .in-left-main p:hover{
     color:chartreuse;
 }
 
@@ -34,6 +34,11 @@ margin: 20px;
 
 .obraz{
 background-image: url(img/bwi.jpg);
+height: 100px;
+}
+
+.obraz2{
+background-image: url(img/rwk.jpg);
 height: 100px;
 }
 
