@@ -1,0 +1,38 @@
+* {
+margin: 0px;
+padding: 0px;
+}
+body {
+font-family: Arial;
+}
+.C3, header {
+text-align: center;
+background-color: rgb(220, 220, 220);
+padding: 20px;
+}
+.C2, .C5, .C1, .C4{
+background-color: rgb(255, 127, 80);
+}
+.C1, .C2 {  text-align: left;
+height: 410px;
+}
+.C4, .C5 {  height: 100px;
+color: white;
+}
+.C1, .C4 {  width: 50%;
+float: left;
+}
+.C5, .C2   {
+float: right;
+width: 50%;
+}
+a {
+color: white;
+}
+table, th {
+border: 1px solid rgb(255, 127, 80);
+padding: 10px;
+}
+#ZDJECIE      {width: auto;
+height: 250px;
+}

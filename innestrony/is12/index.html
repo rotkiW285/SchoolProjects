@@ -1,0 +1,178 @@
+<html>
+	<head>
+		<style>
+			body{
+				background-color: #ffcc99;
+				font-family: impact;
+				color: white;
+  				text-shadow: 0 0 10px black, 0 0 5px black;
+			}
+			#head{
+				background-image: url("kot.png");
+				width: 100%;
+				height: 160px;
+				background-repeat: no-repeat;
+  				background-size: 100% 160px;
+  				font-family: impact;
+  				font-size: 72;
+  				display: flex;
+  				align-items: center;
+  				justify-content: center;
+  				color: white;
+  				text-shadow: 0 0 10px black, 0 0 5px black;
+  				border-bottom: 2px solid;
+			}
+
+			#menu{
+				display: flex;
+  				justify-content: center;
+  				
+
+			}
+			ol{
+				list-style: none;
+				display: flex;
+				flex-direction: row;
+  				justify-content: center;
+			}
+			li{
+				padding: 0 10px 0;
+			}
+			.option1{
+				font-size: 45;
+				height: 70px;
+				width: 320px;
+				background-color: red;
+				display: flex;
+  				justify-content: center;
+  				background-image: url("jinx.png"); 
+  				background-position: 0px -15px;
+  				background-size: 100% 200%;
+  				background-repeat: no-repeat;
+  				
+			}
+			.option2{
+				font-size: 45;
+				height: 70px;
+				width: 320px;
+				background-color: red;
+				display: flex;
+  				justify-content: center;
+  				background-image: url("gort.jpg"); 
+  				background-position: 0px 0px;
+  				background-size: 100% 200%;
+  				background-repeat: no-repeat;
+  				
+			}
+			.option3{
+				font-size: 45;
+				height: 70px;
+				width: 320px;
+				background-color: red;
+				display: flex;
+  				justify-content: center;
+  				background-image: url("orange.jpg"); 
+  				background-position: 0px -55px;
+  				background-size: 100% 200%;
+  				background-repeat: no-repeat;
+  				
+			}
+			.option4{
+				font-size: 45;
+				height: 70px;
+				width: 320px;
+				background-color: red;
+				display: flex;
+  				justify-content: center;
+  				background-image: url("bingus.jpg"); 
+  				background-position: 0px -15px;
+  				background-size: 100% 200%;
+  				background-repeat: no-repeat;
+  				
+			}
+			a{
+				text-decoration: none;
+				color:white;
+				text-shadow: 0 0 10px black, 0 0 5px black;
+			}
+			#container{
+				border: 3px solid black;
+				background-color: #ffbf70;
+				width: 100%;
+				height: 800px;
+				display: flex;
+				justify-content: space-between;
+				font-family: Verdana;
+			}
+			#Lpanel{
+				background-color: #ffbf50;
+				width: 20%;
+				height: 800px;
+				display: flex;
+				flex-direction: row;
+  				justify-content: center;
+				padding-top: 20px;
+				border: 3px solid black;
+
+
+			}
+			#Lpanel img{
+				width: 200px;
+				height: 300px;
+				border: 3px dotted black;
+
+			}
+			#Mpanel{
+				padding: 0 10px 0;
+				background-color: #ffbf70;
+				width: 60%;
+				height: 800px;	
+				font-size: 22;
+				text-shadow: 0;
+				}
+			#Ppanel{
+				background-color: #ffbf50;
+				width: 20%;
+				height: 800px;		
+				display: flex;
+				flex-direction: row;
+  				justify-content: center;	
+  				border: 3px solid black;}
+  				@media(max-width: 1100px)
+		</style>
+	</head>
+	<body>
+		<div id="head">Koty</div>
+		<div id="menu">
+			<ol>
+				<li><div class="option1"><a href="#">Jinx</a></div></li>
+				<li><div class="option2"><a href="#">Gort</a></div></li>
+				<li><div class="option3"><a href="#">Orange</a></div></li>
+				<li><div class="option4"><a href="#">Bingus</a></div></li>
+			</ol>
+		</div>
+		<div id="container">
+
+			<div id="Lpanel">
+				<img src="bingus.jpg">
+			</div>
+
+			<div id="Mpanel">
+				<h1>Dlaczego Bingus najlepszy w 2022r:</h1>
+				<hr>TekstTekstTekstTekstTekstTekstTekstTekstTekst</hr>
+			</div>
+			<div id="Ppanel">
+				<form>
+					<h2>Logowanie</h2>
+					 <label for="fname">Login:</label>
+  					 <input type="text" id="fname" name="fname"><br><br>
+ 					 <label for="lname"> Hasło:</label>
+ 					 <input type="password" id="lname" name="lname"><br><br>
+ 					 <input type="submit" id="lname" name="lname" value="Zaloguj">
+				</form>
+			</div>
+
+
+		</div>
+	</body>
+</html>

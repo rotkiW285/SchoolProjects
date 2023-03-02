@@ -1,0 +1,33 @@
+#menu, #menu ul {
+    display: block;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+#menu li{
+    float: left;
+    margin-right: 10px;
+    position: relative;
+}
+#menu ul li{
+    clear: both;
+    visibility: hidden;
+}
+#menu li:hover ul li{
+    visibility: visible;
+}
+#menu a,  #menu li:hover li a{
+    width: 120px;
+    text-decoration: none;
+    background-color: rgb(255, 234, 0);
+    color: black;
+    border: 3px solid rgb(0, 0, 0);
+    padding: 5px;
+    display: block;
+
+}
+#menu li:hover a, #menu li:hover li:hover a {
+    background-color: saddlebrown;
+    text-align: center;
+
+}

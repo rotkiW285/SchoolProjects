@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    
+	<head>
+        <link href="plik.css" rel="stylesheet" type="text/css">
+<meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="../../main.css">
+
+        <style type="text/css">
+            .tg  {border-collapse:collapse;border-spacing:0;}
+            .tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+              overflow:hidden;padding:10px 5px;word-break:normal;}
+            .tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+              font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
+            .tg .tg-lqy6{text-align:right;vertical-align:top}
+            .tg .tg-0lax{text-align:left;vertical-align:top}
+            </style>
+
+
+		<script type="text/javascript">
+			function calculateBmi() {
+				var weight = document.bmiForm.weight.value
+				var height = document.bmiForm.height.value
+				if(weight > 0 && height > 0){	
+					var finalBmi = weight/(height/100*height/100)
+					document.bmiForm.bmi.value = finalBmi
+					if(finalBmi < 18.5){
+						document.bmiForm.meaning.value = "poniżej normy"
+					}
+					if(finalBmi > 18.5 && finalBmi < 25){
+						document.bmiForm.meaning.value = "w granicach normy"
+					}
+					if(finalBmi > 25){
+						document.bmiForm.meaning.value = "powyżej normy"
+					}
+				}
+				else{
+					alert("Uzupełnij wszystkie pola poprawnie")
+				}
+			}
+		</script>
+	</head>
+	<body>
+        <tr>
+            <img style="border: 0px solid" src="nazwa.jpg" width="400" heigth="400" alt="BMI">    
+        </tr>
+		<form name="bmiForm">
+			Waga(kg): <input type="text" name="weight" size="10"><br />
+			Wzrost(cm): <input type="text" name="height" size="10"><br />
+			<input type="button" value="Licz BMI" onClick="calculateBmi()"><br />
+			BMI: <input type="text" name="bmi" size="10"><br />
+			Twój wskaźnik jest: <input type="text" name="meaning" size="25"><br />
+			<input type="reset" value="Reset" />
+		</form>
+	</body>
+</html>

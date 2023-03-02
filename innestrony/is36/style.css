@@ -1,0 +1,33 @@
+ul,ul li{
+    display: block;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+ 
+}
+#menu, #menu ul{
+    width: 200px;
+    }
+    #menu li {position: relative;}
+    #menu ul{
+        position:absolute;
+        left: 200px;
+        top: 0;
+        visibility: hidden;
+    }
+#menu li:hover ul{
+    visibility:visible;
+
+}
+#menu a,#menu li:hover li a{
+ display: block;
+ text-decoration: none;
+ background-color: blueviolet;
+ color: cornsilk;
+ border: 3px solid red;
+ width: 100px;
+ margin-top: 5px;
+}
+#menu li:hover a, #menu li:hover li:hover a{
+    background-color: saddlebrown;
+}

@@ -1,0 +1,102 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+
+main{
+	width: 100%;
+	min-height: 500px;
+	background: green;
+}
+
+#logo{
+	height: 120px;
+	width: 100%;
+	background-color: red;
+}
+
+#mid1{
+	background-color: blue;
+	width: 100%
+	height: 200px;
+	padding: 10px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+}
+
+#mid1 div{
+	height: 100px;
+	width: 250px;
+	background-color: black;
+}
+
+#mid2{
+	background-color: gray;
+	width: 100%
+	height: 200px;
+	padding: 10px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+}
+
+#mid2 div{
+	height: 100px;
+	width: 250px;
+	background-color: pink;
+}
+
+#left{
+	width: 48.5%;
+	height: 300px;
+	padding: 10px;
+	background: brown;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-around;
+	float: left;
+}
+
+#left div{
+	height: 120px;
+	width: 200px;
+	background-color: white;
+	margin: 10px;
+}
+
+#right{
+	width: 48.5%;
+	height: 300px;
+	padding: 10px;
+	background: aqua;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+	float: left;
+}
+
+#right div{
+	height: 120px;
+	width: 200px;
+	margin: 10px;
+	background-color: orange;
+}
+
+#footer{
+	width: 100%;
+	height: 200px;
+	display: flex;
+	flex-direction: row;
+	padding: 10px;
+	justify-content: space-between;
+	clear: both;
+}
+
+#footer div{
+	height: 120px;
+	width: 160px;
+	background-color: purple;
+}

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        :root {
+        --rotate-time: 10s;
+        }
+        *{margin: 0;}
+        body{display: flex; align-items: center; justify-content: center; }
+        #corn{
+            width: 80vh;
+            height: 80vh;
+            background-image: url(corn.png);
+            background-size: contain;
+            animation-name: corn;
+            animation-duration: var(--rotate-time);
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+            transform-origin: center;   
+            position: absolute;
+            
+        }
+        #corn2{
+            width: 80vh;
+            height: 80vh;
+            background-image: url(corn.png);
+            background-size: contain;
+            animation-name: corn2;
+            animation-duration: var(--rotate-time);
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+            
+            transform-origin: center;
+
+        }
+
+        #corn3{
+            width: 80vh;
+            height: 80vh;
+            background-image: url(corn.png);
+            background-size: contain;
+            animation-name: corn3;
+            animation-duration: var(--rotate-time);
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+            position: absolute;
+            transform-origin: center;
+
+        }
+        #corn4{
+            width: 80vh;
+            height: 80vh;
+            background-image: url(corn.png);
+            background-size: contain;
+            animation-name: corn4;
+            animation-duration: var(--rotate-time);
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+            position: absolute;
+            transform-origin: center;
+
+        }
+        
+        @keyframes corn {
+            0%{transform: rotate3d(0, 1, 0.5, 0deg);;
+                transform-origin: center;}
+            100%{transform: rotate3d(0, 1, 0.5, 360deg);;
+                
+        }}
+        @keyframes corn2 {
+            0%{transform: rotate3d(0, 1, 0.5, 90deg);;
+                transform-origin: center;}
+            100%{transform: rotate3d(0, 1, 0.5, 450deg);;
+                
+        }}
+        @keyframes corn3{
+            0%{transform: rotate3d(0, 1, 0.5, 180deg);;
+                transform-origin: center;}
+            100%{transform: rotate3d(0, 1, 0.5, 540deg);;
+                
+        }}
+        @keyframes corn4{
+            0%{transform: rotate3d(0, 1, 0.5, 270deg);;
+                transform-origin: center;}
+            100%{transform: rotate3d(0, 1, 0.5, 630deg);;
+                
+        }}
+    </style>
+</head>
+<body>
+    <div id="corn"></div>
+    <div id="corn2"></div>
+    <div id="corn3"></div>
+    <div id="corn4"></div>
+</body>
+</html>

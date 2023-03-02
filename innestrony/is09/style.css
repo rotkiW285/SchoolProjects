@@ -1,0 +1,108 @@
+/* Strona responsywna */
+ 
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ 
+html{
+    width: 100%;
+    height: 100%;
+}
+ 
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    line-height: 1.5;
+    color: #434343;
+    background-color: #fff;
+}
+ 
+.container{
+    width: 1050px;
+    margin: 0 auto;
+}
+ 
+header{
+    margin: 25px 0;
+}
+ 
+header img{
+    width: 100%;
+}
+ 
+aside{
+    float: left;
+    width: 30%;
+    margin-bottom: 25px;
+}
+ 
+aside nav ul{
+    list-style: none;
+}
+ 
+aside nav ul li{
+    margin-bottom: 1px;
+}
+aside nav ul li a{
+    display: block;
+    text-decoration: none;
+    color: purple;
+    background-color: #e100e1;
+    padding: 8px;
+}
+ 
+aside nav ul li a:hover{
+    background-color: black;
+    color: white;
+}
+ 
+#main{
+    float: right;
+    width: 65%;
+    margin-bottom: 25px;
+}
+ 
+footer{
+    clear: both;
+    color: white;
+    background-color: #121212;
+    padding: 15px;
+}
+ 
+@media (min-width: 1100px){ 
+    .container{width: 1050px;}
+    aside{width: 30%;}
+    #main{ width: 65%;}
+ 
+}
+ 
+@media (max-width: 1100px) and (min-width: 1000px){
+    .container{width: 950px;}
+    aside{width: 30%;}
+    #main{ width: 65%;}
+ 
+}
+ 
+@media (max-width: 1000px) and (min-width: 800px){
+    .container{width: 950px;}
+    aside{width: 30%;}
+    #main{ width: 65%;}
+ 
+}
+ 
+@media (max-width: 800px) and (min-width: 500px){
+    .container{width: 750px;}
+    aside{width: 30%;}
+    #main{ width: 65%;}
+}
+ 
+@media (max-width: 500px){
+    .container{width: 450px;}
+    aside, #main { width: 100%;}
+}
+@media (max-width:500px){
+    .container {width: 90%;}
+    aside, #main {width: 100%;}
+}

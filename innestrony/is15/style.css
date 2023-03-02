@@ -1,0 +1,115 @@
+body{
+	width: 100vw;
+	height: 100vh;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+
+}
+#container{
+	width: 20vw;
+	height: 20vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+
+	position: absolute;
+}
+
+#jeden{
+	height: 10vh;
+	width: 10vh;
+	background-color: DeepSkyBlue;
+	margin: 2vh;
+
+	animation-name: jeden;
+	animation-duration: 4s;
+	animation-iteration-count: infinite;
+
+	position: absolute;
+	top: 0vh;
+	left: 0vh;
+
+}
+
+#dwa{
+	height: 10vh;
+	width: 10vh;
+	background-color:IndianRed ;
+	margin: 2vh;
+	position: absolute;
+	top: 0vh;
+	left: 20vh;
+
+	animation-name: dwa;
+	animation-duration: 4s;
+	animation-iteration-count: infinite;
+}
+
+
+#trzy{
+	height: 10vh;
+	width: 10vh;
+	background-color: #FFFF66;
+	margin: 2vh;
+	position: absolute;
+	top: 20vh;
+	left: 0vh;
+
+	animation-name: trzy;
+	animation-duration: 4s;
+	animation-iteration-count: infinite;
+}
+
+
+#cztery{
+	height: 10vh;
+	width: 10vh;
+	background-color: DarkSeaGreen;
+	margin: 2vh;
+
+
+	position: absolute;
+	top: 20vh;
+	left: 20vh;
+
+	animation-name: cztery;
+	animation-duration: 4s;
+	animation-iteration-count: infinite;
+}
+
+
+/* ------------------------ */
+
+@keyframes jeden{
+	25% {left: 20vh; top: 0vh; transform: rotate(-90deg); background-color:IndianRed ;}
+	50% {left: 20vh; top: 20vh; transform: rotate(-180deg); background-color: DarkSeaGreen;}
+	75% {left: 0vh; top: 20vh; transform: rotate(-270deg); background-color: #FFFF66;}
+	100% {top: 0vh; left: 0px; transform: rotate(-360deg)}
+
+}
+
+@keyframes dwa{
+	25% {left: 20vh; top: 20vh; transform: rotate(-90deg); background-color: DarkSeaGreen;}
+	50% {left: 0vh; top: 20vh; transform: rotate(-180deg); background-color: #FFFF66;}
+	75% {left: 0vh; top: 0vh; transform: rotate(-270deg); background-color: DeepSkyBlue;}
+	100% {top: 0vh; left: 20vh; transform: rotate(-360deg);}
+}
+
+@keyframes trzy{
+	25% {left: 0vh; top: 0vh; transform: rotate(-90deg); background-color: DeepSkyBlue;}
+	50% {left: 20vh; top: 0vh; transform: rotate(-180deg);  background-color:IndianRed ;}
+	75% {left: 20vh; top: 20vh; transform: rotate(-270deg); background-color: DarkSeaGreen;}
+	100% {top: 20vh; left: 0vh; transform: rotate(-360deg); }
+}
+
+@keyframes cztery{
+	25% {left: 0vh; top: 20vh; transform: rotate(-90deg); background-color: #FFFF66;}
+	50% {left: 0vh; top: 0vh; transform: rotate(-180deg);  background-color: DeepSkyBlue;}
+	75% {left: 20vh; top: 0vh; transform: rotate(-270deg); background-color:IndianRed ;}
+	100% {top: 20vh; left: 20vh; transform: rotate(-360deg)}
+}
+

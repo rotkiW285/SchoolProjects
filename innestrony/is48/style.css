@@ -1,0 +1,61 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+#main{
+    width: 100%;
+    
+}
+#header{
+    width: 100%;
+    height: 150px;
+    background-image: url(tloh.jpg);
+    border: 2px solid black;
+    background-size: cover;
+}
+#egzamin{
+    text-align: center;
+    margin-top: 50px;
+    font-size:  30px; 
+}
+#body{
+    width: 25%;
+    height: 2500px;
+    border: 2px solid black;
+    background-image: url(1zdj.jpg);
+    background-size: cover
+}
+#left{
+    width: 50%;
+    height: 2500px;
+    border: 2px solid black;
+    text-align: center;
+   
+}
+#right{
+    width: 25%;
+    height: 2500px;
+    border: 2px solid black;
+    background-image: url(1zdj.jpg);
+    background-size: cover
+}
+#pozycja{
+    display: flex;
+}
+#footer{
+    width: 100%;
+    height: 100px;
+    background-image: url(footer.jpg);
+    background-size: cover;
+}
+#naz{
+    text-align: center;
+    font-size: 30px;
+}
+#eg{
+    text-align: center;
+    margin-top: 20px;
+}
+#text{
+    padding: 5px;
+}

@@ -1,0 +1,31 @@
+body{
+background-color: lightblue;
+font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+color: red;
+}
+
+h3 {
+color: green;
+}
+
+.paragraph_1 {
+color: yellow;
+font-size: 20px;
+}
+
+.paragraph_2 {
+color: blue;
+font-size: 20px;
+}
+
+.list-item_1 {
+color: red;
+font-style: italic;
+}
+
+.list-item_2 {
+font-weight: bold;
+}

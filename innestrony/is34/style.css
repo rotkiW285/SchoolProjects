@@ -1,0 +1,98 @@
+#wszystko
+{
+    width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+}
+#gora
+{
+    display: flex;
+    padding: 10px;
+    background-color: bisque;
+    justify-content: space-around;
+}
+.klocki
+{
+    padding: 5px;
+    background-color: burlywood;
+    width: 75px;
+    text-align: center;
+}
+#fota
+{
+    width: 1000px;
+    height: 250px;
+}
+#fota > img
+{
+    width: 1000px;
+    height: 250px;
+}
+#srodek
+{
+    display: flex;
+    background-color: burlywood;
+    justify-content: space-between;
+    padding: 10px;
+}
+.opcje
+{
+    padding: 10px;
+    background-color: orangered;
+    width: 250px;
+    height: 250px;
+}
+#spod
+{
+    text-align: center;
+    padding: 15px;
+    background-color: red;
+}
+
+@media (max-width:450px)
+{
+    body
+    {
+        margin: 0;
+    }
+    #wszystko
+    {
+       width: 300px;
+    }
+    #gora
+    {
+        text-align: center;
+        justify-content: space-around;
+        flex-direction: column;
+        max-width: 100%;
+        height: 200px;
+    }
+    .klocki
+    {
+        width: 270px;
+    }
+    #fota
+    {
+        height: 150px;
+    }
+    #fota > img
+    {
+        width: max-content;
+        height: 150px;
+        width: 300px;
+    }
+    #srodek
+    {
+        text-align: center;
+        justify-content: space-around;
+        flex-direction: column;
+        max-width: 100%;
+        height: 400px;
+    }
+    .opcje
+    {
+        text-align: center;
+        width: 250px;
+        height: 100px;
+    }
+}

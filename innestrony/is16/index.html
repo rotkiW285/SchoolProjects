@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>SIUR</title>
+<meta name='viewport' content='width=device-width, initial-scale=1, maximum-scale=1'>
+<style type="text/css">
+* {margin: 0; padding: 0; box-sizing: border-box;}
+html {width: 100%; height: 100%;}
+body {font-size: 14px; font-family: Arial; line-height: 1.5; color: #434343; background-color: #fff;}
+.container {width: 1050px; margin: 0 auto;}
+header {margin: 25px 0;}
+header img {width: 100%;}
+aside {float: left; width: 30%; margin-bottom: 25px;}
+aside nav ul {list-style: none;}
+aside nav ul li {margin-bottom: 1px;}
+aside nav ul li a {display: block; text-decoration: none; color: black; background-color: red; padding: 10px;}
+aside nav ul li a:hover {background-color: black; color: #fff;}
+#main {float: right; width: 65%; margin-bottom: 25px;}
+footer {clear: both; color: #fff; background-color: black; padding: 25px;}
+@media (min-width: 1100px) {
+.container {width: 1050px; margin: 0 auto;}
+aside {width: 30%;}
+#main {width: 65%;}
+}
+@media (max-width: 1100px) and (min-width: 1000px) {
+.container {width: 950px; margin: 0 auto;}
+aside {width: 30%;}
+#main {width: 65%;}
+}
+@media (max-width: 1000px) and (min-width: 800px) {
+.container {width: 750px; margin: 0 auto;}
+aside {width: 30%;}
+#main {width: 65%;}
+}
+@media (max-width: 800px) and (min-width: 500px) {
+.container {width: 450px; margin: 0 auto;}
+aside, #main {width: 100%;}
+}
+@media (max-width: 500px) {
+.container {width: 300px; margin: 0 auto;}
+aside, #main {width: 100%;}
+}
+body{
+background-image: url(img/bck.jpg);
+}
+#tlo{
+width: 100%;
+height: 500px;
+margin: 0;
+}
+img{
+width: 140px;
+height: 140px;
+margin: 10px;
+}
+ul{
+list-style-type: none;
+margin: 0;
+padding: 0;
+overflow: hidden;
+background-color: pink;
+}
+li{
+float: left;
+width: 25%;
+}
+li a{
+padding: 16px;
+display: block;
+text-align: center;
+text-decoration: none;
+color: hotpink;
+}
+#calosc{
+display: flex;
+align-items: stretch;
+height: 500px;
+}
+#lewo,#srodek,#prawo{
+margin: 5px;
+padding: 10px;
+background-color: pink;
+}
+#lewo,#prawo{
+width: 13%;
+flex-grow: 0;
+display: none;
+}
+#lewo{
+align-items: center;
+display: flex;
+flex-direction: column;
+}
+#srodek{
+width: 600px;
+padding: 10px;
+flex-grow: 1;
+}
+footer{
+width: 100%;
+height: 40px;
+background-color: hotpink;
+}
+input{
+width: 90%;
+}
+@media (min-width: 1100px) {
+}
+@media (max-width: 500px){
+li{width: 100%;}
+#calosc{flex-direction: column;}
+#lewo{display: none;}
+#srodek{width: 100%;}
+#prawo{width: 100%; height: 150px;}
+}
+</style>
+</head>
+<body>
+<img id="tlo" src="dziendobry.jpg">
+<ul>
+<li><a href="#">Raz</a></li>
+<li><a href="#">DWA</a></li>
+<li><a href="#">TRZY</a></li>
+<li><a href="#">CZTERY</a></li>
+</ul>
+<div id="calosc">
+<div id="lewo">
+<li><a href="#">Raz</a></li>
+<li><a href="#">DWA</a></li>
+<li><a href="#">TRZY</a></li>
+<li><a href="#">CZTERY</a></li>
+</div>
+<div id="srodek">
+<center>
+<p>
+ART 1
+Chciałem być marynarzem
+chciałem mieć tatuaże
+podróżować, zwiedzać świat
+pięknie żyć, garściami życie brać
+chciałem być piosenkarzem
+chciałem mieć pełne sale
+podróżować, zwiedzać świat
+i wiele pięknych, pięknych kobiet znać
+przemierzyłem cały świat od Las Vegas po Krym
+zgrałem tysiąc talii kart, które lubią dym
+skasowałem kilka bryk, nie żałuję dziś
+nie żałuję dziś</p>
+<p>
+ART2
+chciałem dać coś dobrego
+dałem tylko siebie
+los okrutnie ze mnie drwił
+gorzkich nauk nie oszczędził mi
+chciałem wnieść coś nowego
+chciałem mieć więcej wiary
+los okrutnie ze mnie drwił
+mojej wiary nie odebrał mi
+</p>
+</center>
+</div>
+<div id="prawo">
+<img src="dziendobry2.jpg">
+<img src="dziendobry2.jpg">
+<img src="dziendobry2.jpg">
+</div>
+</div>
+<footer>
+<P><center> KACPER G.</center></P></footer>
+</body>
+</html>

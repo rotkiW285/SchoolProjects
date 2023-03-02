@@ -1,0 +1,76 @@
+#body{
+    position: relative;
+    height: 800px;
+    width: 400px;
+    border: 1px solid black;
+    background-image: url(tło.jpg);
+    overflow: hidden;
+    background-size: cover;
+}
+#head{
+    position: absolute;
+    top: 35px;
+    left: 500px;
+    animation-name: text;
+    animation-delay: 1s;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+    font-family: fantasy;
+}
+@keyframes text {
+    0%{left: -500px;}
+    20%{left: -250px;}
+    30%{left: -100px;}
+    40%{left: -50px;}
+    50%{left: 0px;}
+    60%{left: 100px;}
+    100%{left: 145px;}
+  
+}
+#piwo{
+    position: absolute;
+    scale: 70%;
+    animation-name: piwo;
+    animation-delay: 3.5s;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+    left: -223px;
+    top: -800px;
+}
+@keyframes piwo {
+    0%{top: -800px;}
+    25%{top: -600px;}
+    50%{top: -400px;}
+    60%{top: -200px;}
+    75%{top: -100px;}
+    100%{top: -80px;}
+}
+#main{
+    position: absolute;
+    bottom: -800px; 
+    left: 120px;
+    width: 170px;
+    font-family: fantasy;
+    animation-name: zubr;
+    animation-delay: 2.5s;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+    font-size: 35px;
+
+}
+@keyframes zubr {
+    0%{bottom: -800px; left: 120px;}
+    20%{bottom: -600px; left: 120px;}
+    50%{bottom: -400px; left: 120px;}
+    60%{bottom: -200px; left: 120px;}
+    80%{bottom: -100px; left: 120px;}
+    100%{bottom: 80px; left: 120px;}
+}
+#tekst{
+    display: block;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}

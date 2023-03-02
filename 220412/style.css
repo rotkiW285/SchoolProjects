@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,700&display=swap');
+
+p{
+font-family: 'Roboto', sans-serif;
+}
+
+a:link{
+    color: green;
+    }
+
+a:visited{
+color: yellow;
+}
+
+a:hover{
+color: red;
+font-size: 25px;
+font-family: Arial, Helvetica, sans-serif;
+}
+
+a:active{
+background-color: yellow;
+font-size: 30px;
+font-family: Arial, Helvetica, sans-serif;
+}
