@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>JavaScript Calculator</title>
+	<link rel="stylesheet" href="style.css">
+	<script type="text/javascript">
+		function add() {
+			var num1 = parseFloat(document.getElementById("num1").value);
+			var num2 = parseFloat(document.getElementById("num2").value);
+			var result = num1 + num2;
+			document.getElementById("result").value = result;
+		}
+
+		function subtract() {
+			var num1 = parseFloat(document.getElementById("num1").value);
+			var num2 = parseFloat(document.getElementById("num2").value);
+			var result = num1 - num2;
+			document.getElementById("result").value = result;
+		}
+
+		function multiply() {
+			var num1 = parseFloat(document.getElementById("num1").value);
+			var num2 = parseFloat(document.getElementById("num2").value);
+			var result = num1 * num2;
+			document.getElementById("result").value = result;
+		}
+
+		function divide() {
+			var num1 = parseFloat(document.getElementById("num1").value);
+			var num2 = parseFloat(document.getElementById("num2").value);
+			if (num2 === 0) {
+				alert("Nie wolno dzielić przez 0!");
+				return;
+			}
+			var result = num1 / num2;
+			document.getElementById("result").value = result;
+		}
+
+		function clearForm() {
+			document.getElementById("num1").value = "";
+			document.getElementById("num2").value = "";
+			document.getElementById("result").value = "";
+		}
+	</script>
+</head>
+<body>
+	<h1>JavaScript Calculator</h1>
+	<form>
+		<label for="num1">Numer 1:</label>
+		<input type="number" id="num1"><br>
+
+		<label for="num2">Numer 2:</label>
+		<input type="number" id="num2"><br>
+
+		<label for="result">Wynik:</label>
+		<input type="number" id="result" disabled><br>
+
+		<button type="button" onclick="add()">+</button>
+		<button type="button" onclick="subtract()">-</button>
+		<button type="button" onclick="multiply()">x</button>
+		<button type="button" onclick="divide()">÷</button>
+		<button type="button" onclick="clearForm()">Wyczyść</button>
+	</form>
+	<p> &#169; CHATGPT</p>
+</body>
+</html>
