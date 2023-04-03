@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            border: 1px solid black;
+            text-align: center;
+            line-height: 22vh;
+        }
+        body{
+            height: 100vh;
+            width: 100vw;
+        }
+        #grid-container{
+            height: 90vh;
+            width: 90vw;
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            grid-template-rows: repeat(4, 1fr);
+            grid-template-areas: 
+            "e4 e5 e10 e12 e7"
+            "e4 e6 e6 e2 e11"
+            "e4 e1 e1 e8 e9"
+            "e4 e1 e1 e3 e3";
+        }
+        .e1{grid-area: e1;}
+        .e2{grid-area: e2;}
+        .e3{grid-area: e3;}
+        .e4{grid-area: e4;}
+        .e5{grid-area: e5;}
+        .e6{grid-area: e6;}
+        .e7{grid-area: e7;}
+        .e8{grid-area: e8;}
+        .e9{grid-area: e9;}
+        .e10{grid-area: e10;}
+        .e11{grid-area: e11;}
+        .e12{grid-area: e12;}
+    </style>
+</head>
+<body>
+    
+    <div id="grid-container">
+        <div class="e1" >1</div>
+        <div class="e2" >2</div>
+        <div class="e3" >3</div>
+        <div class="e4" >4</div>
+        <div class="e5" >5</div>
+        <div class="e6" >6</div>
+        <div class="e7" >7</div>
+        <div class="e8" >8</div>
+        <div class="e9" >9</div>
+        <div class="e10" >10</div>
+        <div class="e11" >11</div>
+        <div class="e12" ></div>
+    </div>
+</body>
+</html>
