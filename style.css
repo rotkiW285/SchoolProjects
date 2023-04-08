@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
 *{
     margin: 0px;
     padding: 0;
@@ -5,12 +7,12 @@
 
 html{
     background-color: #2b2b2b; 
-    font-family: sans-serif;  
+    font-family: 'Poppins', sans-serif; 
 }
 
 .text{
     display: flex;
-    font-size: 20px;
+    font-size: 19px;
     color: #dfdfdf;
     margin: 20px;
     margin-bottom: 5px;
@@ -57,4 +59,12 @@ div.gallery p{
     width: 100%;
     color: #dfdfdf;
     background-color: #3b3b3b;
+}
+
+div.gallery p a{
+    text-decoration: none;
+}
+
+div.gallery p a:hover{
+    text-decoration: underline;
 }
