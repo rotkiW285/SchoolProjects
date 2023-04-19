@@ -1,0 +1,74 @@
+#container{
+    display: grid;
+    grid-template-columns: repeat(6,150px);
+    grid-template-rows: repeat(5,150px);
+    gap: 5px;
+}
+
+.grid-item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ff0000;
+    color: white;
+}
+
+#g1{
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+
+#g2{
+    grid-column: 2/3;
+    grid-row: 1/2;
+}
+
+#g3{
+    grid-column: 3/4;
+    grid-row: 1/2;
+}
+
+#g4{
+    grid-column: 4/5;
+    grid-row: 1/2;
+}
+
+#g5{
+    grid-column: 5/6;
+    grid-row: 1/2;
+}
+
+#g6{
+    grid-column: 3/4;
+    grid-row: 3/4;
+}
+
+#g7{
+    grid-column: 3/4;
+    grid-row: 3/4;
+}
+
+#g8{
+    grid-column: 3/4;
+    grid-row: 3/4;
+}
+#g9{
+    grid-column: 3/4;
+    grid-row: 3/4;
+}
+#g10{
+    grid-column: 3/4;
+    grid-row: 3/4;
+}
+#g11{
+    grid-column: 3/4;
+    grid-row: 3/4;
+}
+#g12{
+    grid-column: 3/4;
+    grid-row: 3/4;
+}
+#g13{
+    grid-column: 3/4;
+    grid-row: 3/4;
+}
