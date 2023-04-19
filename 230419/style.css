@@ -39,36 +39,72 @@
 }
 
 #g6{
-    grid-column: 3/4;
-    grid-row: 3/4;
+    grid-column: 1/6;
+    grid-row: 2/3;
 }
 
 #g7{
-    grid-column: 3/4;
+    grid-column: 1/2;
     grid-row: 3/4;
 }
 
 #g8{
-    grid-column: 3/4;
+    grid-column: 1/2;
     grid-row: 3/4;
 }
 #g9{
-    grid-column: 3/4;
-    grid-row: 3/4;
+    grid-column: 1/2;
+    grid-row: 4/5;
 }
 #g10{
     grid-column: 3/4;
-    grid-row: 3/4;
+    grid-row: 5/6;
 }
 #g11{
     grid-column: 3/4;
-    grid-row: 3/4;
+    grid-row: 5/6;
 }
 #g12{
     grid-column: 3/4;
     grid-row: 3/4;
 }
 #g13{
+    grid-column: 3/4;
+    grid-row: 3/4;
+}
+#g14{
+    grid-column: 3/4;
+    grid-row: 3/4;
+}
+#g15{
+    grid-column: 3/4;
+    grid-row: 3/4;
+}
+#g16{
+    grid-column: 3/4;
+    grid-row: 3/4;
+}
+#g17{
+    grid-column: 3/4;
+    grid-row: 3/4;
+}
+#g18{
+    grid-column: 3/4;
+    grid-row: 3/4;
+}
+#g19{
+    grid-column: 3/4;
+    grid-row: 3/4;
+}
+#g20{
+    grid-column: 3/4;
+    grid-row: 3/4;
+}
+#g21{
+    grid-column: 3/4;
+    grid-row: 3/4;
+}
+#g22{
     grid-column: 3/4;
     grid-row: 3/4;
 }
