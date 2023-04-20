@@ -1,4 +1,4 @@
-# SchoolProjects (Redesigned)
+# SchoolProjects V2 (Redesigned)
 Some weird things I do during lessons
 
 ## Whats new?
