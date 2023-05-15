@@ -9,7 +9,7 @@
     grid-template-columns: repeat(5,250px);
     grid-template-rows: repeat(6,150px);
     gap: 5px;
-    background-color: #6cb397;
+    background-color: #1b694a;
 }
 
 a:link, a:visited{
