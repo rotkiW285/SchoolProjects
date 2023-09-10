@@ -68,3 +68,10 @@ div.gallery p a{
 div.gallery p a:hover{
     text-decoration: underline;
 }
+
+.php-warning{
+    color: red;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
