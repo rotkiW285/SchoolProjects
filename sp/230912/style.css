@@ -1,0 +1,17 @@
+*{
+    font-size: 40pt;
+    text-align: center;
+    background-color: pink;
+}
+
+a, a:visited, a:link{
+    color: black;
+    text-decoration: none;
+    margin: 5px;
+}
+
+.links{
+    display: flex;
+    flex-direction: row;
+    margin: 5px;
+}
