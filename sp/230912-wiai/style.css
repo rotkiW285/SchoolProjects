@@ -1,0 +1,189 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+#container{
+    width: 1050px;
+    margin: 0 auto;
+    background-color: aqua;
+}
+
+header img{
+    width: 100%;
+    height: 150px;
+}
+
+header{
+    margin: 25px 0;
+    margin-top: 5px;
+}
+
+.links-head{
+    color: black;
+    text-decoration: none;
+    text-align: center;
+    margin: 10px;
+    width: 100%;
+    display: flex;
+}
+.links-head a{
+    color: black;
+    text-decoration: none;
+    justify-content: space-between;
+    text-align: center;
+    padding: 5px 20px;
+    background-color: pink;
+    border-radius: 5px;
+    width: 100%;
+    margin: 0px 10px;
+}
+
+.box{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 150px;
+}
+
+aside{
+    width: 30%;
+}
+
+input{
+    padding: 5px;
+    margin: 3px;
+}
+
+form input[type="submit"]{
+    background-color: red;
+    color: white;
+    border: none;
+    font-size: 12pt;
+    border-radius: 5px;
+    text-align: center;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+
+aside a{
+    display: block;
+    background-color: red;
+    font-size: 12pt;
+    padding: 10px 20px;
+    text-decoration: none;
+    margin-bottom: 2px;
+    color: black;
+}
+
+main{
+    width: 65%;
+}
+
+.galeria{
+    margin: 30px 25px 0 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.galeria img{
+    width: 20%;
+    margin-bottom: 10px;
+}
+
+footer{
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+@media (min-width: 1100px){
+    #container{
+        width: 1050px;
+    }
+    aside{
+        width: 30%;
+    }
+    main{
+        width: 65%;
+    }
+}
+
+@media (max-width: 1100px) and (min-width: 1000px){
+    #container{
+        width: 950px;
+    }
+    aside{
+        width: 30%;
+    }
+    main{
+        width: 65%;
+    }
+}
+
+@media (max-width: 1000px) and (min-width: 800px){
+    #container{
+        width: 750px;
+    }
+    aside{
+        width: 30%;
+    }
+    main{
+        width: 65%;
+    }
+}
+
+@media (max-width: 800px) and (min-width: 500px){
+    #container{
+    width: 450px;    
+    }
+    aside{
+        display: none;
+    }
+    main{
+        width: 100%;
+        text-align: center;
+    }
+    .links-head{
+        flex-direction: column;
+        align-items: center;
+        padding: 0px;
+        margin: 0;
+    }
+    .links-head a{
+        margin: 3px;
+    }
+    .galeria{
+        display: none;
+    }
+
+}
+
+@media (max-width: 500px){
+    #container{
+        width: 300px;
+    }
+    main{
+        width: 100%;
+    }
+    .box{
+        flex-direction: column;
+    }
+    aside{
+        display: none;
+    }
+    .links-head{
+        flex-direction: column;
+        align-items: center;
+        padding: 0px;
+        margin: 0;
+    }
+    .links-head a{
+        margin: 3px;
+    }
+    .galeria{
+        display: none;
+    }
+}
