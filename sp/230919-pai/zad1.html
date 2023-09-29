@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zad1</title>
+</head>
+<body>
+<script>
+var a=parseFloat(prompt("Podaj liczbę a:"))
+var b=parseFloat(prompt("Podaj liczbę b:"))
+var c=parseFloat(prompt("Podaj liczbę c:"))
+var pom=0;
+if (b < a){
+    pom = a;
+    a = b;
+    b = pom;
+}
+while(a < b){
+    document.write(a, ", ")
+    a = a+c;
+}
+</script>
+</body>
+</html>
