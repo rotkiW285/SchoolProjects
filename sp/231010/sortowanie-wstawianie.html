@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sortowanie przez wstawianie</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<script>
+function insertionSort(T) {
+    var n = T.length;
+    for (var i = 1; i < n; i++) {
+        var key = T[i];
+        var j = i - 1;
+
+        while (j >= 0 && T[j] > key) {
+            T[j + 1] = T[j];
+            j = j - 1;
+        }
+        T[j + 1] = key;
+    }
+    return T;
+}
+
+var sortedArray = insertionSort([6, 5, 3, 1, 8, 7, 2, 4]);
+
+document.write("Posortowana tablica (sortowanie przez wstawianie): " + sortedArray.join(", "));
+
+</script>
+</body>
+</html>
+<!-- Wiktor Stawicki 4IT1 -->

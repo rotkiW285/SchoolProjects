@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Sortowanie bąbelkowe</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <script>
+    function bubbleSort(arr) {
+      var len = arr.length;
+      var swapped;
+      
+      do {
+        swapped = false;
+        for (var i = 0; i < len - 1; i++) {
+          if (arr[i] > arr[i + 1]) {
+            // Zamiana miejscami dwóch elementów, jeśli są w złej kolejności
+            var temp = arr[i];
+            arr[i] = arr[i + 1];
+            arr[i + 1] = temp;
+            swapped = true;
+          }
+        }
+      } while (swapped);
+      
+      return arr;
+    }
+
+    // Przykład użycia
+    var unsortedArray = [6, 5, 3, 1, 8, 7, 2, 4];
+    var sortedArray = bubbleSort(unsortedArray);
+
+    // Wyświetlenie posortowanej tablicy za pomocą document.write
+    document.write("Posortowana tablica: " + sortedArray);
+  </script>
+</body>
+</html>
