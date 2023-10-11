@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
 *{
-    margin: 0px;
+    margin: 0;
     padding: 0;
 }
 
@@ -13,29 +13,29 @@ html{
 .text{
     display: flex;
     font-size: 19px;
-    color: #dfdfdf;
     margin: 20px;
     margin-bottom: 5px;
-}
-
-.text{
     margin-top: 0;
 }
 
 .nav{
     margin: 10px;
-    margin-bottom: 10px;
 }
 
 .nav a{
-  margin: 5px;  
+    margin: 5px;  
     justify-content: space-between;
+    text-decoration: none;
+}
+
+.nav a:hover, div.gallery p a:hover{
+    color: #ee810b;
 }
 
 .nav h3{
     float: right;
     color: #dfdfdf; 
-    font-size: 15px;
+    font-size: 13px;
 }
 
 a:link, a:visited{
@@ -51,6 +51,7 @@ div.gallery {
 div.gallery img {
     width: 100%;
     height: auto;
+    border-radius: 10px;
 }
 
 div.gallery p{
@@ -59,19 +60,22 @@ div.gallery p{
     width: 100%;
     color: #dfdfdf;
     background-color: #3b3b3b;
+    border-radius: 1px;
 }
 
 div.gallery p a{
     text-decoration: none;
 }
 
-div.gallery p a:hover{
-    text-decoration: underline;
-}
-
-.php-warning{
+.warning{
     color: red;
     text-align: center;
     margin-top: 30px;
     margin-bottom: 20px;
+}
+
+@media (max-width: 800px) {
+    .nav h3{
+        display: none;
+    }
 }
