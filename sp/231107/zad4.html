@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zad 4</title>
+</head>
+<body>
+<script>
+var a = parseInt(prompt("Podaj pierwszą liczbę"))
+var b = parseInt(prompt("Podaj drugą liczbę"))
+var c = parseInt(prompt("Podaj trzecią liczbę"))
+
+    function max(a,b,c){
+        if(a>b){
+            if(a>c){
+                max = a
+                return max
+            }
+            else{
+                max = c
+                return max
+            }
+        }
+    else{
+        if(b>c){
+            max = b
+            return max
+        }
+        else{
+            max = c
+            return max
+        }
+    }
+    }
+    document.write("Największa liczba to ", (a,b,c))
+</script>
+</body>
+</html>

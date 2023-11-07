@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zad4</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<script>
+// function pierwsza(liczba){
+//     if (liczba > 1) && (liczba /  x ==0){
+
+//     }
+// }
+// Liczba do sprawdzenia
+const number = 44;
+
+// Sprawdź, czy liczba jest liczbą pierwszą
+let isPrime = true;
+
+for (let i = 2; i <= number / 2; i++) {
+  if (number % i === 0) {
+    isPrime = false;
+    break;
+  }
+}
+
+if (isPrime) {
+  console.log("Liczba jest pierwsza");
+} else {
+  console.log("Liczba nie jest pierwsza");
+}
+</script>
+</body>
+</html>

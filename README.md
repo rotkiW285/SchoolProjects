@@ -7,5 +7,4 @@ Some weird things I do during lessons
 <li>Python files are finally avaliable to download and view</li>
 <li>Dziwne strony (Weird Sites) -  I changed name to "Inne strony" (Other sites)<br> 
 They were moved from my larger site to this project, (and I also added their imgs)</li>
-<li>There is also a photos tab on the site, where you can download photos (which are not under a free license), for use in your school projects</li>
 
