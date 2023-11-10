@@ -1,0 +1,109 @@
+:root{
+    padding: 100px;
+    text-align: center;
+    text-decoration: none;
+    align-items: center;
+}
+
+#body{
+    position: relative;
+    height: 800px;
+    width: 500px;
+    border: 5px solid black;
+    overflow: hidden;
+    background-color: red;
+}
+
+#logo{
+    position: absolute;
+    font-size: 30px;
+    color: black;
+    top: 35px;
+    left: 500px;
+    animation-name: logoo;
+    animation-delay: 0.5s;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+}
+
+@keyframes logoo {
+    0%{left: -500px;}
+    20%{left: -250px;}
+    30%{left: -100px;}
+    40%{left: -50px;}
+    50%{left: 0px;}
+    60%{left: 20px;}
+    100%{left: 100px;}
+  
+}
+
+#burger{
+    position: absolute;
+    scale: 60%;
+    animation-name: kanapeczka;
+    animation-delay: 2.5s;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+    left: 300px;
+}
+
+@keyframes kanapeczka {
+    0%{left: -800px;}
+    25%{left: -600px;}
+    50%{left: -500px;}
+    60%{left: -400px;}
+    75%{left: -300px;}
+    100%{left: -190px;}
+}
+
+#dostepny{
+    position: absolute;
+    bottom: -800px; 
+    left: 120px;
+    width: 170px;
+    animation-name: dos;
+    animation-delay: 2.5s;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+    font-size: 35px;
+    left: 200px;
+}
+
+@keyframes dos {
+    0%{left: -800px; bottom: 120px;}
+    20%{left: -600px; bottom: 120px;}
+    50%{left: -400px; bottom: 120px;}
+    60%{left: -200px; bottom: 120px;}
+    80%{left: -100px; bottom: 120px;}
+    100%{left: 160px; bottom: 120px;}
+}
+#tekst{
+    display: block;
+    color: #ffff00;
+}
+
+#polecam {
+    position: absolute;
+    display: block;
+    color: white;
+    margin-top: 700px;
+    font-size: 24px;
+    animation-name: polecanko;
+    animation-delay: 2.5s;
+    animation-duration: 4s;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+    left: 3000px;
+}
+
+@keyframes polecanko {
+    0%{left: 150px; bottom: -100px;}
+    20%{left: 150px; bottom: -50px;}
+    50%{left: 150px; bottom: 40px;}
+    60%{left: 150px; bottom: 50px;}
+    80%{left: 150px; bottom: 60px;}
+    100%{left: 150px; bottom: 70px;}
+}
