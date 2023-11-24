@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Kalkulator</h1>
+    Podaj a: <input type="text" id="a"><br>
+    Podaj b: <input type="text" id="b"><br><br>
+    <input type="submit" value="+" onclick="suma()">
+    <input type="submit" value="-" onclick="roznica()">
+    <input type="submit" value="*" onclick="iloczyn()">
+    <input type="submit" value="/" onclick="iloraz()"><br><br>
+    Wynik wynosi: <span id="wynik"></span>
+
+    <script type="text/javascript">
+        function suma() {
+            let a = document.getElementById("a").value;
+            let b = document.getElementById("b").value;
+    
+            if (a=="" || b==""){
+                document.getElementById("wynik").innerHTML = "Nie wpisałeś danych!";
+            }
+            else{
+                a = parseFloat(a);
+                b = parseFloat(b);
+                document.getElementById("wynik").innerHTML = a+b;
+            }
+    
+        }
+        function roznica() {
+            let a = document.getElementById("a").value;
+            let b = document.getElementById("b").value;
+    
+            if (a=="" || b==""){
+                document.getElementById("wynik").innerHTML = "Nie wpisałeś danych!";
+            }
+            else{
+                a = parseFloat(a);
+                b = parseFloat(b);
+                document.getElementById("wynik").innerHTML = a-b;
+            }
+    
+        }
+        function iloczyn() {
+            let a = document.getElementById("a").value;
+            let b = document.getElementById("b").value;
+    
+            if (a=="" || b==""){
+                document.getElementById("wynik").innerHTML = "Nie wpisałeś danych!";
+            }
+            else{
+                a = parseFloat(a);
+                b = parseFloat(b);
+                document.getElementById("wynik").innerHTML = a*b;
+            }
+    
+        }
+        function iloraz() {
+            let a = document.getElementById("a").value;
+            let b = document.getElementById("b").value;
+    
+            if (a=="" || b==""){
+                document.getElementById("wynik").innerHTML = "Nie wpisałeś danych!";
+            }
+            else{
+                a = parseFloat(a);
+                b = parseFloat(b);
+                document.getElementById("wynik").innerHTML = a/b;
+            }
+    
+        }
+        function oblicz() {
+            let a = document.getElementById("a").value;
+            let b = document.getElementById("b").value;
+    
+            if (a=="" || b==""){
+                document.getElementById("wynik").innerHTML = "Nie wpisałeś danych!";
+            }
+            else{
+                a = parseFloat(a);
+                b = parseFloat(b);
+                document.getElementById("wynik").innerHTML = a+b;
+            }
+    
+        }
+    </script>
+</body>
+</html>
