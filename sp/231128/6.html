@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>6</title>
+</head>
+<body>
+<script>
+"Ala ma kota i tak już jest".lastIndexOf("a"); //15
+
+const url = "http://nazwastrony.pl/przykladowaNazwaPliku.php";
+
+document.write( url.slice(url.lastIndexOf(".") + 1), "<br>" ); //"php"
+document.write( url.slice(url.lastIndexOf("/") + 1, url.lastIndexOf(".")) ); //"przykladowaNazwaPliku"
+
+</script>
+</body>
+</html>
