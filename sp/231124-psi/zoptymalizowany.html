@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zoptymalizowany kalkulator</title>
+</head>
+<body>
+    <h1>Zoptymalizowany kalkulator</h1>
+    Podaj a: <input type="text" id="a"><br>
+    Podaj b: <input type="text" id="b"><br><br>
+    <input type="submit" value="+" onclick="dzialanie(1)">
+    <input type="submit" value="-" onclick="dzialanie(2)">
+    <input type="submit" value="*" onclick="dzialanie(3)">
+    <input type="submit" value="/" onclick="dzialanie(4)"><br><br>
+    Wynik wynosi: <span id="wynik"></span>
+
+    <script type="text/javascript">
+        function dzialanie(numer) {
+
+            let a = document.getElementById("a").value;
+            let b = document.getElementById("b").value;
+    
+            if (a=="" || b==""){
+                document.getElementById("wynik").innerHTML = "Nie wpisałeś danych!";
+            }
+            else{
+                a = parseFloat(a);
+                b = parseFloat(b);
+                switch (numer){
+                    case 1:
+                        document.getElementById("wynik").innerHTML = a+b;
+                        break;
+                    case 2:
+                        document.getElementById("wynik").innerHTML = a-b;
+                        break;
+                    case 3:
+                        document.getElementById("wynik").innerHTML = a*b;
+                        break;
+                    case 4:
+                        if (b==0){
+                            document.getElementById("wynik").innerHTML = "Nie dziel przez 0!";
+                        }
+                        else{
+                            document.getElementById("wynik").innerHTML = a/b;
+                        }
+                        break;
+                }
+        
+            }
+    
+        }
+    </script>
+</body>
+</html>
