@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Script2</title>
+</head>
+<body>
+<script>
+var tab= ["styczeń", "luteń", "marzeń", "kwiecień", "majeń", "czerwień", "lipień", "sierpień", "wrzesień","październien", "listopadzień", "grudzień"]
+var tab2= ["niedziela", "poniedziałek", "wtorek", "środa", "czwartek", "piątek", "sobota"]
+
+var data = new Date();
+var rok = data.getFullYear();
+var miesiac = data.getMonth();
+var dzientygodnia = data.getDay();
+var dzienmiesiaca = data.getDate();
+
+document.write("Dzis jest ", tab2[dzientygodnia], "<br>")
+document.write(dzienmiesiaca," ", tab[miesiac], " " ,rok)
+</script>
+</body>
+</html>

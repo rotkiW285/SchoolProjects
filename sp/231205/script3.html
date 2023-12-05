@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zneta</title>
+    <style>
+$page-color: #eee;
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: 'Zilla Slab', serif;
+  background: #577386;
+  overflow: hidden;
+}
+
+p {
+  margin: 0 0 3px;
+  line-height: 1;
+  letter-spacing: 1px;
+  pointer-events: none;
+}
+
+.calendar {
+  position: relative;
+  width: 152px;
+  cursor: default;
+  user-select: none;
+  background-color: white;
+  
+  &::before,
+  &::after {
+    content: '';
+    position: absolute;
+    top: -28px;
+    left: 40px;
+    width: 10px;
+    height: 10px;
+    border-radius: 5px;
+    background: #ddd;
+    z-index: 3;
+  }
+  
+  &::after {
+    left: initial;
+    right: 40px;
+  }
+}
+
+.pages {
+  position: relative;
+  text-align: center;
+  background: $page-color;
+  box-shadow: 0 10px 0 0px #a5a4a4;
+  
+  &::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 45px;
+    background: indianred;
+    bottom: 100%;
+    left: 0;
+    z-index: 2;
+  }
+}
+
+.page {
+  position: relative;
+  padding: 20px 30px 15px;
+  background: $page-color;
+  
+  &::before {
+    content: '';
+    position: absolute;
+    bottom: 99%;
+    left: 0;
+    display: block;
+    background: 
+      linear-gradient(-45deg, $page-color 10px, $page-color 10px, $page-color 10px,  transparent 0), 
+      linear-gradient(45deg, $page-color 10px, transparent 0);
+    background-position: left top;
+    background-repeat: repeat-x;
+    background-size: 10px 18px;
+    height: 10px;
+    width: 100%;
+  }
+}
+
+.month,
+.day-name {
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.day {
+  font-size: 60px;
+  font-weight: 700;
+  margin: 0 0 15px;
+}
+
+.year {
+  font-size: 12px;
+}
+
+.tear {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  transform-origin: top left;
+  box-shadow: 0 0 10px -1px rgba(0,0,0,0.5);
+  pointer-events: none;
+  animation: tear-animation .8s linear forwards;
+}
+
+@keyframes tear-animation {
+  0% {
+    transform: rotate(0deg);
+    top: 0;
+    opacity: 1;
+  }
+  20% {
+    transform: rotate(9deg);
+    top: 0;
+    opacity: 1;
+  }
+  70% {
+    opacity: 1;
+  }
+  100% {
+    top: 200px;
+    opacity: 0;
+  }
+}
+
+    </style>
+</head>
+<body>
+    <div class="calendar">
+        <div class="pages"></div>
+      </div>
+<script>
+const pages = document.querySelector('.pages');
+const locale = window.navigator.language || 'en-us'
+
+let date = new Date();
+let dayNum = date.getDate();
+let month = date.getMonth();
+let dayName = date.toLocaleString(locale, { weekday: 'long' });
+let monthName = date.toLocaleString(locale, { month: 'long' });
+let year = date.getFullYear();
+
+function daysInMonth (month, year) {
+  return new Date(year, month + 1, 0).getDate();
+}
+
+function getNewDate () {
+  if (dayNum < daysInMonth(month, year)) {
+    dayNum++;
+  } else {
+    dayNum = 1;
+  } 
+  if (dayNum === 1 && month < 11) {
+    month++;
+  } else if (dayNum === 1 && month === 11) {
+    month = 0;
+  }
+  if (dayNum ===1 && month === 0) {
+    year++;
+  }
+  const newDate = new Date(year, month, dayNum);
+  dayName = newDate.toLocaleString('en-us', { weekday: 'long' });
+  monthName = newDate.toLocaleString('en-us', { month: 'long' });
+}
+
+function handleClick (e) {
+  getNewDate();
+  updateCalendar(e.target);
+}
+
+function updateCalendar (target) {
+  if (target && target.classList.contains('page')) {
+    target.classList.add('tear');
+    setTimeout(() => {
+      pages.removeChild(target);
+    }, 800);
+  } else {
+    return;
+  }
+  renderPage();
+}
+
+function renderPage () {
+  const newPage = document.createElement('div');
+  newPage.classList.add('page');
+  newPage.innerHTML = `
+    <p class="month">${monthName}</p>
+    <p class="day">${dayNum}</p>
+    <p class="day-name">${dayName}</p>
+    <p class="year">${year}</p>
+  `;
+  pages.appendChild(newPage);
+}
+
+renderPage();
+
+pages.addEventListener('click', handleClick);    
+</script>
+</body>
+</html>
