@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>231201</title>
+<link rel="stylesheet" href="style.css">
+<script src="script.js"></script>
+</head>
+<body>
+    <div id="nav">
+        <div id="main">
+            <div id="obrazek"><img src="wzor.jpg"></div>
+            <div id="calc">
+                Waga (kg): <input type="number" id="a"><br>
+                Wzrost (cm) : <input type="number" id="b"><br>
+                <input id="przycisk" type="submit" value="Oblicz" onclick="bmi()"><br>
+                Twoje BMI: <p id="bmiwynik"></p><br>
+                Interpetacja wyniku: <p id="waga"></p><br>
+            </div>
+            <div id="tabela">
+                <table height="400" width="300">
+                    <tr id="t0">
+                        <th>Wartość BMI</th>
+                        <th>Interpetacja wyniku</th>
+                    </tr>
+                    <tr>
+                        <td>poniżej 16</td>
+                        <td>Wygłodzenie</td>
+                    </tr>
+                    <tr>
+                        <td>16,0-16,9</td>
+                        <td>Wychudzenie</td>
+                    </tr>
+                    <tr>
+                        <td>17-18,4</td>
+                        <td>Niedowaga</td>
+                    </tr>
+                    <tr>
+                        <td>18,5-24,9</td>
+                        <td>Waga prawidłowa</td>
+                    </tr>
+                    <tr>
+                        <td>25-29,9</td>
+                        <td>Nadwaga</td>
+                    </tr>
+                    <tr>
+                        <td>30-34,9</td>
+                        <td>Otyłość I stopnia</td>
+                    </tr>
+                    <tr>
+                        <td>35-39,9</td>
+                        <td>Otyłość II stopnia</td>
+                    </tr>
+                    <tr>
+                        <td>powyżej 40</td>
+                        <td>Otyłość skrajna</td>
+                    </tr>   
+                </table>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
