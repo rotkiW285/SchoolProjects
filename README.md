@@ -1,5 +1,5 @@
 # SchoolProjects V2 (Redesigned)
-Some weird things I do during lessons
+Some weird things I do on lessons
 
 ## Whats new?
 <li>Photos show almost the entire site</li>
