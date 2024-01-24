@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1szy</title>
+</head>
+<body>
+    <script>
+        class Osoba {
+            constructor(imie, nazwisko){
+                this.imie = imie;
+                this.nazwisko = nazwisko;
+            }
+    
+    PrzedstawSie(){
+        document.write("Witaj, przyjacielu! ")
+    }
+    compliment(imie2, obiekt){
+        return "To jest wspaniały " + obiekt + ", " + imie2;
+    }
+    }
+    let os3 = new Osoba ("Tomek", "Różański");
+    let compliment = os3.compliment("Tomek", "krawat");
+    document.write(compliment);
+    </script>
+</body>
+</html>
