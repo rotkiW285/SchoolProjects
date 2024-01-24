@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <style>
+#perla{
+            background-image: url(perla.png);
+            background-size: cover;
+
+            animation-name: perla;
+            animation-duration: 5s;
+            animation-iteration-count: 1;
+            animation-fill-mode: forwards;
+            border-radius: 10%;
+            margin-left: 15px;
+        } 
+            @keyframes perla{
+            0% {width: 10px; height: 10px;  background-size: cover; background-image: url(perla.png); transform: translate(-500px, -500px); }
+            100% {width: 600px; height: 600px; background-size: cover; background-image: url(perla.png); transform: translate(200px, -100px)rotate(360deg);}
+        }
+        #perla2{
+            background-image: url(perla2.jpg);
+            background-size: auto;
+
+            animation-name: perla2;
+            animation-duration: 7s;
+            animation-iteration-count: 1;
+            animation-fill-mode: forwards;
+            border-radius: 10%;
+            margin-left: 0px;
+        } 
+            @keyframes perla2{
+            0% {width: 50px; height: 50px;  background-size: cover; background-image: url(perla2.jpg); transform: translate(-500px, -500px); }
+            100% {width: 300px; height: 520px; background-size: cover; background-image: url(perla2.jpg); transform: translate(100px, 50px)rotate(90deg);}
+        }
+        #naszyjnik{
+            background-image: url(naszyjnik.jpg);
+            background-size: cover;
+
+            animation-name: naszyjnik;
+            animation-duration: 10s;
+            animation-iteration-count: 1;
+            animation-fill-mode: forwards;
+            border-radius: 10%;
+            margin-left: 0px;
+        } 
+            @keyframes naszyjnik{
+            0% {width: 50px; height: 50px;  background-size: cover; background-image: url(naszyjnik.jpg); transform: translate(-500px, -500px); }
+            100% {width: 200px; height: 300px; background-size: cover; background-image: url(naszyjnik.jpg); transform: translate(100px, -300px);}
+        }
+        #napis {
+            animation-name: napis;
+            animation-duration: 10s;
+            animation-iteration-count: 1;
+            animation-fill-mode: forwards;
+            border-radius: 10%;
+            margin-left: 0px;
+        }
+        @keyframes napis{
+            0% {width: 0px; height:0px; transform: translate(-500px, -500px );}
+            50% {width: 0px; height:0px; transform: translate(-500px, -500px )rotate(360deg);}
+            100% {width: 50px; height:50px; transform: translate(150px, -650px );}
+        }
+    </style>
+</head>
+<body>
+    
+    <div id="perla2">
+
+    </div>
+    <div id="perla">
+
+    </div>
+    <div id="napis">
+<h1>PERŁA DOBRE PIWKO. ZAMOW JUZ DZIS NASZYJNIK!!!!!11!!! POLECA MAREK MACHURA ELLO</h1>
+    </div>
+    <div id="naszyjnik"></div>
+</body>
+</html>
