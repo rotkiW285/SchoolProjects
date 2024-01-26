@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BAWILANDIA</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="site">
+<nav>
+    <div class="nl">
+        BAWILANDIA
+    </div>
+    <div class="nr">
+        <img src="logo.svg">
+    </div>
+</nav>
+
+<div class="header">
+    <div class="menusite">
+<a href="index.html">HOME</a>
+<a href="galeria.html">GALERIA</a>
+    </div>
+<div class="empty">
+</div>
+
+</div>
+
+<main>
+    <div class="mainer">
+        <div class="liczenie">
+            <p>Witaj w Bawilandii! <br> Znajdziesz tu wszystko czego potrzebujesz na udane przyjęcie urodzinowe!</p>
+        Koszty urodzin:<br>
+        Ilość osób:<input type="number" name="osoby" value="1" id="osoby"><br>
+        <br>
+        Malowanie Twarzy: <input type="checkbox" name="pole" value="2"  id="jeden"><br>
+        Animacje: <input type="checkbox" name="pole" value="3" id="dwa"><br>
+        Karta duża rodzina: <input type="checkbox" name="pole" value="4" id="trzy"><br>
+        <button type="submit" onclick="koszt()">Oblicz Koszty</button><br>
+        Koszt: <p id="wynik"></p>
+        </div>
+    </div>
+    <div class="righter">
+        <table height="300" width="300">
+            <tr>
+                <th id="cennik">CENNIK</th>
+            </tr>
+            <tr>
+                <td></td>
+                <td>Kwota</td>
+            </tr>
+            <tr>
+                <td>Koszt za osobę</td>
+                <td>45zł/os</td>
+            </tr>
+            <tr>
+                <td>Animacje</td>
+                <td>+ 30zł/os</td>
+            </tr>
+            <tr>
+                <td>Malowanie twarzy</td>
+                <td>+20zł/os</td>
+            </tr>
+        </table>
+    </div>
+</main>
+<footer>
+    <p>Autor: FREEM3CH4N1K</p>
+</footer>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
