@@ -1,1 +1,0 @@
-Zmieńcie nazwy klas i jakoś sformatujcie ten kod. Wygląda jakby go pies zjadł a potem wyrzygał. Specjanie, żeby nie było 2 identycznych prac, chociaż i tak znajdą się jakieś mózgi co wyślą tak jak jest. Jak dostaniecie uwagi to nie nasza wina. A i lepiej skasować ten plik, no chyba że (cenzura by rotkiW285) ma go przeczytać
