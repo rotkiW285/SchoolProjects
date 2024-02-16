@@ -1,6 +1,3 @@
-*{
-
-}
 .site{
     width: 1200px;
     height: 600px;
@@ -99,7 +96,6 @@ main{
     width: 250px;
     height: 200px;
     border-radius: 5px;
-
 }
 
 .righter{
