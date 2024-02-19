@@ -14,18 +14,16 @@
             this.ilosc_operacji=ilosc_operacji;
         }
         przedstawsie(){
-            document.write("Jestem ",this.imie,"<br> Mój symbol fabryczny to: ",this.symbol,"<br>Wyprodukował mnie ",this.producent,"<br><br>")
+            document.write("Jestem ",this.imie,"<br> Mój symbol fabryczny to: ",this.symbol,"<br>Wyprodukował mnie ", this.producent, "<br>Wykonuję ", this.ilosc_operacji, " operacji na minutę.", "<br><br>");
         }
         wydajnosc(czas_pracy){
-            let il_operacji=5;
-            czas_pracy=(this.ilosc_operacji/il_operacji)*60;
-            document.write("Robot będzie pracował: ",czas_pracy," minut")
-        }
+            let il_operacji=(this.ilosc_operacji * czas_pracy);
+            document.write("Robot wyprodukuje: ",il_operacji," przedmiotów")
+            }
         };
-        dane=new Robot("Android", "SX-105C", "Corpo2 S.A.",3);
+        dane=new Robot("Android", "SX-105C", "Corpo2 S.A.", 1000);
         dane.przedstawsie();
-        dane.wydajnosc();
-
+        dane.wydajnosc(3);
     </script>
 </body>
 </html>
