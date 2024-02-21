@@ -11,7 +11,7 @@
 <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
 <link rel="manifest" href="favicon/site.webmanifest">
 </head>
-<body>
+<body class="">
     <div class="nav">
     <a href="index.html"><p class="text">𝕊CHOOL PROJECTS</p></a>
     <a href="starszaki.html">STARSZAKI</a>
@@ -25,36 +25,42 @@
     <h3><a href="https://github.com/rotkiw285" target="_blank">&#169; rotkiW285</a></h3>
 </div>
 <div class="warning"><p>UWAGA! Funkcje PHP nie będą tu działać z powodu braku backendu na gh-pages</p></div>
+<div class="table-container">
+    <table>
+    <thead>
+        <tr>
+        <th>Nazwa</th>
+        <th>Data</th>
+        <th>Pobierz</th>
+        </tr>
+    </thead>
+    <tbody id="table-body"></tbody>
+    </table>
+</div>
 
-<div class="gallery">
-    <img src="img/cie00.webp" loading="lazy">
-    <p>E-ZESZYT</p>
-    <p><a href="https://docs.google.com/document/d/1wmfDnKYrY6Kq8SfuyD4WRn_7wZglFRAQYvtqOQOnuKw/edit?usp=sharing" target="_blank">Zobacz</a></p></div> 
-<div class="gallery"></div>
+<script>
+    fetch('pliki-php.json')
+        .then(response => response.json())
+        .then(data => {
+            const tableBody = document.getElementById('table-body');
 
-<div class="gallery">
-    <img src="img/cie01.webp" loading="lazy">
-    <p>17.11.23 - PDFy do nauki do spr</p>
-    <p><a href="zip/cie01.zip" download>Pobierz</a></p></div> 
+            data.forEach((record) => {
+                const row = document.createElement('tr');
+                const nameCell = document.createElement('td');
+                const dateCell = document.createElement('td');
+                const downloadCell = document.createElement('td');
 
-<div class="gallery">
-    <img src="img/cie02.webp" loading="lazy">
-    <p>Zadanie "Sklep komputerowy"</p>
-    <p><a href="zip/cie02.zip" download>Pobierz</a></p></div> 
+                nameCell.textContent = record.name;
+                dateCell.textContent = record.date;
+                downloadCell.innerHTML = `<a href="${record.download}" target="_blank">Pobierz</a>`;
 
-<div class="gallery">
-    <img src="img/cie03.webp" loading="lazy">
-    <p>Baza danych klienci</p>
-    <p><a href="files/211123.accdb" download>Pobierz</a></p></div> 
+                row.appendChild(nameCell);
+                row.appendChild(dateCell);
+                row.appendChild(downloadCell);
 
-<div class="gallery">
-    <img src="img/cie04.webp" loading="lazy">
-    <p>24.11.23 - Sprawdzian -> uczniowie</p>
-    <p><a href="/files/spr241123.accdb" download>Pobierz</a></p></div> 
-
-<div class="gallery">
-    <img src="img/cie05.webp" loading="lazy">
-    <p>02.01.24 - PDF do spr 050124 (Typy danych)</p>
-    <p><a href="files/Typy-danych.pdf" target="_blank">Zobacz</a></p></div> 
+                tableBody.appendChild(row);
+            });
+        });
+</script>
 </body>
 </html>

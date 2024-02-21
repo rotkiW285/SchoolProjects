@@ -1,0 +1,63 @@
+[
+  {
+  "name": "E-ZESZYT",
+  "date": "-",
+  "download": "https://docs.google.com/document/d/1wmfDnKYrY6Kq8SfuyD4WRn_7wZglFRAQYvtqOQOnuKw/edit?usp=sharing"
+},
+{
+  "name": "PDFy do nauki do spr",
+  "date": "17-11-2023",
+  "download": "zip/cie01.zip"
+},
+{
+  "name": "Zadanie 'Sklep komputerowy'",
+  "date": "Nieznana",
+  "download": "zip/cie02.zip"
+},
+{
+  "name": "Baza danych klienci",
+  "date": "Nieznana",
+  "download": "files/211123.accdb"
+},
+{
+  "name": "Sprawdzian -> uczniowie",
+  "date": "24-11-2023",
+  "download": "files/spr241123.accdb"
+},
+{
+  "name": "PDF do spr (Typy danych)",
+  "date": "02-01-2024",
+  "download": "files/Typy-danych.pdf"
+},
+{
+  "name": "Baza danych wyjazdy_firmowe",
+  "date": "12-01-2024",
+  "download": "files/baza-danych-wyjazdy_firmowe.txt"
+},
+{
+  "name": "Baza danych filmoteka",
+  "date": "12-01-2024",
+  "download": "files/baza-danych-filmoteka.txt"
+},
+{
+  "name": "Kartkówka -> uczniowie",
+  "date": "16-02-2024",
+  "download": "files/kartkowka-160224.mdb"
+},
+{
+  "name": "Baza danych 'Oceny 1' uzupełniona",
+  "date": "16-02-2024",
+  "download": "files/Oceny-1-uzu.mdb"
+},
+{
+  "name": "Pusta baza danych 'Oceny 1' z poleceniami",
+  "date": "16-02-2024",
+  "download": "zip/cie03.zip"
+},
+{
+  "name": "Baza danych 'Oceny 2' NIEuzupełniona",
+  "date": "20-02-2024",
+  "download": "files/Oceny-2.accdb"
+}
+
+]
