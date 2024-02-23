@@ -47,23 +47,24 @@
   "type": "TXT",
   "download": "files/baza-danych-filmoteka.txt"
 },
+
 {
   "name": "Kartkówka -> uczniowie",
   "date": "16-02-2024",
-  "type": "PLIK ACCESS",
-  "download": "files/kartkowka-160224.mdb"
+  "type": "ZIP",
+  "download": "zip/cie05.zip"
 },
 {
-  "name": "Baza danych 'Oceny 1' uzupełniona",
-  "date": "16-02-2024",
-  "type": "PLIK ACCESS",
-  "download": "files/Oceny-1-uzu.mdb"
-},
-{
-  "name": "Pusta baza danych 'Oceny 1' z poleceniami",
+  "name": "Baza danych 'Oceny 1' uzupełniona i z poleceniami",
   "date": "16-02-2024",
   "type": "ZIP",
   "download": "zip/cie03.zip"
+},
+{
+  "name": "Sprawdzian SBD + rozwiązanie",
+  "date": "16-02-2024",
+  "type": "ZIP",
+  "download": "zip/cie04.zip"
 },
 {
   "name": "Baza danych 'Oceny 2' NIEuzupełniona",
