@@ -43,6 +43,12 @@ a:link, a:visited{
 }
 
 div.gallery {
+.gallery-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
     margin: 5px;
     float: left;
     width: 370px;
