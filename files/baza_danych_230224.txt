@@ -1,0 +1,27 @@
+CREATE DATABASE wyjazdy_firmowe;
+
+USE wyjazdy_firmowe;
+
+CREATE TABLE pracownik
+(
+	id_pracownika int NOT NULL AUTO_INCREMENT PRIMARY KEY,
+	nazwisko varchar(50) NOT NULL,
+	imie varchar(30) NOT NULL,
+	miasto varchar(50),
+	ulica text,
+	kod_p varchar(6),
+	nr_mieszkania int
+);
+
+CREATE DATABASE filmoteka;
+
+USE filmoteka;
+
+CREATE TABLE filmy_dokumentalne
+(
+	id_filmu int NOT NULL AUTO_INCREMENT PRIMARY KEY,
+	tytul_filmu text NOT NULL,
+	rezyser varchar(50),
+	rok_powstania year,
+	cena decimal(5,2)
+);

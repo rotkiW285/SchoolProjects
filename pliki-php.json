@@ -1,7 +1,7 @@
 [
   {
   "name": "E-ZESZYT",
-  "date": "-",
+  "date": "",
   "type": "LINK",
   "download": "https://docs.google.com/document/d/1wmfDnKYrY6Kq8SfuyD4WRn_7wZglFRAQYvtqOQOnuKw/edit?usp=sharing"
 },
@@ -71,6 +71,12 @@
   "date": "20-02-2024",
   "type": "PLIK ACCESS",
   "download": "files/Oceny-2.accdb"
+},
+{
+  "name": "Template nowych baz danych filmoteka i wyjazdy_firmowe",
+  "date": "23-02-2024",
+  "type": "TXT",
+  "download": "files/baza_danych_230224.txt"
 }
 
 ]
