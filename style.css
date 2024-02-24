@@ -60,7 +60,7 @@ a:link, a:visited{
     width: 100%;
     color: #dfdfdf;
     background-color: #3b3b3b;
-    border-radius: 1px;
+    border-radius: 8px;
 }
 
 .gallery p a{
