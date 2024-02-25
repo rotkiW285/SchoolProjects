@@ -14,7 +14,6 @@ class Navbar {
 
     render() {
         const navbarElement = document.createElement('nav');
-        const brElement = document.createElement('br');
         navbarElement.classList.add('nav');
 
         const isSmallDevice = window.innerWidth <= 800;
