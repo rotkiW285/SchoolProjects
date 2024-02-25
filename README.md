@@ -1,7 +1,7 @@
-# SchoolProjects V2 (Redesigned)
+# <img src="/favicon/apple-touch-icon.png" height="30px" width="30px"> SchoolProjects V2 (Redesigned)
 Some weird things I do on lessons
 
-## [Link](https://sp.285.works)
+[Link](https://sp.285.works)
 
 ## Whats new?
 <li>Photos show almost the entire site</li>
@@ -9,3 +9,5 @@ Some weird things I do on lessons
 <li>Python files are finally avaliable to download and view</li>
 <li>Dziwne strony (Weird Sites) -  I changed name to "Inne strony" (Other sites)<br> 
 They were moved from my larger site to this project, (and I also added their imgs)</li>
+
+

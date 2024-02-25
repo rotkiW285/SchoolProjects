@@ -6,7 +6,7 @@
 }
 
 html{
-    background-color: #2b2b2b; 
+    background-color: #00000d; 
     font-family: 'Poppins', sans-serif; 
 }
 .nav{
@@ -59,7 +59,7 @@ a:link, a:visited{
     text-align: center;
     width: 100%;
     color: #dfdfdf;
-    background-color: #3b3b3b;
+    background-color: #161624;
     border-radius: 8px;
 }
 
