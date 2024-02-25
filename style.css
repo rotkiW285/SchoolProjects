@@ -12,10 +12,11 @@ html{
 .nav{
     margin: 15px;
     padding: 3px;
-    margin-top: 15px;
     display: flex;
-    justify-content: space-between;
     list-style: none;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
 }
 
 .nav-list{
@@ -26,6 +27,7 @@ html{
     margin: 5px;  
     justify-content: space-between;
     text-decoration: none;
+    margin-left: 10px;
 }
 
 .nav a:hover, div.gallery a:hover{
@@ -107,7 +109,7 @@ a:link, a:visited{
     .nav, .nav-list{
         display: flex;
         flex-direction: column;
-        text-align: center;
-        align-items: center;
+        margin-left: 5px;
+        align-items: flex-start;
     }
 }
