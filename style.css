@@ -6,7 +6,7 @@
 }
 
 html{
-    background-color: #01020C; 
+    background-color: #00000c; 
     font-family: 'Poppins', sans-serif; 
 }
 .nav{
@@ -96,7 +96,7 @@ a:link, a:visited{
     margin-bottom: 20px;
 }
 
-.information{
+.information {
     color: #dfdfdf;
     text-align: center;
     font-size: 21px;
