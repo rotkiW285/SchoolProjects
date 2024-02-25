@@ -43,6 +43,27 @@ a:link, a:visited{
     flex-wrap: wrap;
 }
 
+.logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #dfdfdf;
+    flex-direction: row;
+    padding: 2px;
+    height: 55px;
+}
+
+.logo img{
+    width: 50px;
+    height: 50px;
+}
+
+.logo p{
+    font-size: 18px;
+    font-weight: bold;
+}
+
 .gallery {
     margin: 5px;
     width: 370px;
@@ -89,5 +110,4 @@ a:link, a:visited{
         text-align: center;
         align-items: center;
     }
-    
 }
