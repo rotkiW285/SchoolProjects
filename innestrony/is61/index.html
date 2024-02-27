@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kartka Świąteczna</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      background-image: url("https://t3.ftcdn.net/jpg/00/17/53/76/360_F_17537620_ayUR5QpyBZuP6fEFuTpONH0pBoPJj3wA.jpg");
+      margin: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      background-repeat: no-repeat;
+      background-size: 100%;
+    }
+
+    #card {
+      background-color: lightblue;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+      width: 300px;
+      text-align: center;
+      padding: 20px;
+    }
+
+    h1 {
+      color: #333;
+    }
+
+    p {
+      color: #555;
+    }
+
+
+    body::before {
+      content: '';
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: url('tlo.jpg') center/cover no-repeat; /* Zastąp 'tlo.jpg' ścieżką do swojego obrazka tła */
+      z-index: -1;
+    }
+  </style>
+</head>
+<body>
+  <div id="card">
+    <h1>Wesołych Świąt!</h1>
+    <p>Najlepsze życzenia na radosne Święta i Szczęśliwego Nowego Roku!</p>
+  </div>
+</body>
+</html>
