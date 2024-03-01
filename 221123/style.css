@@ -1,0 +1,69 @@
+div{
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    animation-name: anima;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    float: left;
+}
+
+#dwa{
+    width: 100px;
+    height: 100px;
+    background-color: green;
+    animation-name: anima2;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    float: right;
+}
+
+#trzy{
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+    animation-name: anima2;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    float: right;
+    margin: 200px;
+}
+
+#cztery{
+    width: 100px;
+    height: 100px;
+    background-color: black;
+    animation-name: anima;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    float: left;
+    margin: 200px;
+}
+
+
+@keyframes anima{
+    0% {transform: translate(0px,0px);}
+    25% {transform: translate(200px,0px) rotate(360deg); background-color: #8c00ff; }
+    50% {transform: translate(200px,200px) scale(0,5,2); background-color: rgb(97, 11, 26); border-radius: 50%; }
+    75% {transform: translate(0px,200px); opacity: 0.5;}
+    100% {transform: translate(0px,0px);}
+}
+
+@keyframes anima2{
+    0% {transform: translate(0px,0px);}
+    25% {transform: translate(-200px,0px) rotate(360deg); background-color: #00f7ff; }
+    50% {transform: translate(200px,200px) scale(0,5,2); background-color: rgb(86, 173, 169); border-radius: 50%; }
+    75% {transform: translate(0px,200px); opacity: 0.5;}
+    100% {transform: translate(0px,0px);}
+}
+
+p{
+    font-size: 50px;
+    color: #ff0080;
+    margin-bottom: 100px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}

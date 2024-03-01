@@ -1,0 +1,107 @@
+*{
+    margin: 0;
+    /* padding: 0;  */
+}
+
+#nav{
+    background-color: gray;
+    padding: 20px;
+    height: 100px;
+    display: flex;
+    justify-content: space-around; 
+    width: 100%;
+}
+
+.navblocks {
+background-color: yellow;
+width: 160px;
+height: 100px;
+}
+
+#section{
+width: 100%;
+border: 3px solid green;
+height: 400px;
+display: flex;
+flex-direction: row;
+}
+
+.sleft{
+width: 50%;
+height: 100%;
+}
+
+.inleft{
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+    height: 50px;
+    width: 400px;
+    padding: 20px;
+    margin: 20px;
+    margin-left: 130px;
+}
+
+.sright{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border: none;
+}
+
+.inright {
+    height: 50px;
+    width: 150px;
+    background-color: lawngreen;
+    margin: 2px;
+    padding: 20px;
+    margin: 20px;
+
+}
+
+#undersec{
+background-color: gray;
+padding: 20px;
+height: 100px;
+display: flex;
+justify-content: space-around; 
+width: 100%;
+}
+
+
+.unders{
+background-color: yellow;
+width: 500px;
+height: 100px;
+}
+
+#footer{
+border: 3px solid purple;
+    padding: 20px;
+    height: 100px;
+    display: flex;
+    justify-content: space-around; 
+    width: 100%;
+}
+
+.foot{
+    background-color: yellow;
+    width: 400px;
+    height: 100px;  
+}
+
+
+
+
+
+/* temp */
+div{
+border: 1px solid black;
+}

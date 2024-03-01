@@ -1,0 +1,29 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+
+  html,
+  body {
+    height: 100%;
+
+  }
+
+  body {
+    align-items: center;
+    background-image: url(https://rotkiw285.github.io/freemechanik/tapety/IMG_0791.JPG);
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+  }
+
+  @keyframes octocat-wave {
+    0%, 100% { transform: rotate(0) }
+    20%, 60% { transform: rotate(-25deg) }
+    40%, 80% { transform: rotate(10deg) }
+  }
+
+  .github-corner:hover .octo-arm {
+    animation: octocat-wave 560ms ease-in-out;
+  }
+

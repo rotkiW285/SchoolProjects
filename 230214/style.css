@@ -1,0 +1,131 @@
+*{
+font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+width: 1366px;
+margin: 0;
+padding: 0;
+}
+
+a:link, a:visited{
+    color: #ffffff;
+}
+
+a:hover, .nav-element:hover, .in-left-main p:hover{
+    color:chartreuse;
+}
+
+p{
+    padding: 20px;
+}
+
+.nav{
+width: 100%;
+height: 100px;
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+background-image: url(img/nav.jpg);
+}
+
+.nav-element{
+height: 50px;
+width: 200px;
+margin: 20px;
+}
+
+.obraz{
+background-image: url(img/bwi.jpg);
+height: 100px;
+}
+
+.obraz2{
+background-image: url(img/rwk.jpg);
+height: 100px;
+}
+
+.main{
+width: 100%;
+height: 600px;
+display: flex;
+}
+
+.left-main{
+width: 30%;
+height: 600px;
+display: flex;
+flex-direction: column;
+background-color: #E05146;
+justify-content: center;
+}
+
+.in-left-main{
+margin: 20px;
+height: 60px;
+width: 350px;
+background-color: #ffc164; 
+}
+
+.right-main{
+width: 70%;
+height: 600px;
+display: flex;
+flex-direction: row;
+}
+
+.in-right-main{
+height: 100%;
+width: 33.33%;
+background-color: #C359F7;
+}
+
+.in-right-col{
+height: 400px;
+width: 250px;
+display: flex;
+margin: 30px;
+border: none;
+}
+
+.ring{
+border-radius: 50%;
+height: 100px;
+width: 100px;
+margin-left: 110px;
+}
+
+.footer{
+height: 100px;
+background-color: #8BAB1B;
+}
+
+.footer p{
+text-align: center;
+padding-top: 40px;
+}
+
+.ring1{
+    background-image: url(img/ring1.jpg);
+}
+
+.ring2{
+    background-image: url(img/ring2.jpg);
+}
+
+.ring3{
+    background-image: url(img/ring3.jpg);
+}
+
+.ring4{
+    background-image: url(img/ring4.jpg);
+}
+
+.ring5{
+    background-image: url(img/ring5.jpg);
+}
+
+.ring6{
+    background-image: url(img/ring6.jpg);
+}
+
+div{
+    border:  1px solid black;
+}
