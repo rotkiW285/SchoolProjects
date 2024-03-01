@@ -9,7 +9,13 @@
 body {
   color: rgb(var(--foreground-rgb));
   background: #2b2b2b;
+  color: white;
 }
+
+main {
+  white-space: nowrap;
+}
+
 
 @layer utilities {
   .text-balance {
