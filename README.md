@@ -3,7 +3,7 @@ Some weird things I do on lessons
 
 [Link](https://sp.285.works)
 
-## Whats new?
+## Whats new in version 2?
 <li>Photos show almost the entire site</li>
 <li>From now on, all projects can be conveniently downloaded using the "download" button</li>
 <li>Python files are finally avaliable to download and view</li>
