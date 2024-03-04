@@ -11,14 +11,14 @@ table {
     width: 100%;
     border-collapse: collapse;
   }
-  
+
   table td, table th {
     padding: 11px 9px;
     border: 1px solid #f1b26e;
     text-align: center;
     font-size: 13px;
   }
-  
+
 table th {
     background-color: #ea9234;
   }

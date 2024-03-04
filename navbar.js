@@ -23,13 +23,13 @@ class Navbar {
             ulElement.classList.add('nav-list');
 
             this.links.forEach((link, index) => {
-                const liElement = document.createElement('li'); 
+                const liElement = document.createElement('li');
                 const aElement = document.createElement('a');
                 aElement.href = link.url;
                 aElement.textContent = link.title;
-                aElement.classList.add(link.class); 
-                liElement.appendChild(aElement); 
-                ulElement.appendChild(liElement); 
+                aElement.classList.add(link.class);
+                liElement.appendChild(aElement);
+                ulElement.appendChild(liElement);
             });
 
             navbarElement.appendChild(ulElement);

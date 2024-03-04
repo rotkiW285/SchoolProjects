@@ -6,8 +6,8 @@
 }
 
 html{
-    background-color: #00000c; 
-    font-family: 'Poppins', sans-serif; 
+    background-color: #00000c;
+    font-family: 'Poppins', sans-serif;
 }
 .nav{
     margin: 15px;
@@ -23,7 +23,7 @@ html{
 }
 
 .nav a{
-    margin: 5px;  
+    margin: 5px;
     justify-content: space-between;
     text-decoration: none;
     margin-left: 10px;
