@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>12.03.2024</title>
+<style>body {padding: 30px;}</style>
+</head>
+<body>
+    <input type="text" id="t1" placeholder="essa"><br>
+    <input type="checkbox" id="c1"><br>
+    <input type="radio" id="o1">Opcja1<br>
+    <input type="radio" id="o2">Opcja2<br>
+    <input list="pie"><br>
+    <datalist id="pie">
+        <option value="Pierwsza">Pierwsza</option> 
+        <option value="Pierwsza">Pierwsza</option> 
+        <option value="Pierwsza">Pierwsza</option> 
+        </datalist>
+        <textarea name="a" id="" cols="30" rows="10"></textarea>
+<p>Druga rzecz:</p>
+        <input type="text" name="" id="textInput" oninput="updateText()">
+        <p id="liveText"></p>
+    
+    <script>
+        function updateText(){
+            var inputText = document.getElementById('textInput').value
+            document.getElementById('liveText').innerText = inputText;
+        }
+    </script>
+</body>
+</html>
