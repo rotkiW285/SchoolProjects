@@ -83,6 +83,12 @@
   "date": "01-03-2024",
   "type": "SQL",
   "download": "files/hurtownia.sql"
+},
+{
+  "name": "Zestaw powtórkowy na sprawdzian SBD z DML",
+  "date": "15-03-2024",
+  "type": "ZIP",
+  "download": "zip/cie06.zip"
 }
 
 ]
