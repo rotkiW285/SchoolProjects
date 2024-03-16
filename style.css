@@ -69,7 +69,7 @@ a:link, a:visited{
 .gallery {
     margin: 8px;
     width: 300px;
-    height: 220px;
+    height: 240px;
     display: flex;
     flex-direction: column;
     border-radius: 10px;
@@ -77,16 +77,18 @@ a:link, a:visited{
 }
 
 .gimg{
-    margin: 10px;
     border-radius: 10px;
     overflow: hidden;
     margin: 0 auto;
     margin-top: 10px;
     border-radius: 10px;
+    margin: 5px;
 }
 
 .gimg img{
 height: 100%;
+width: 100%;
+object-fit: cover;
 display: flex;
 align-items: center;
 justify-content: center;
@@ -95,7 +97,7 @@ justify-content: center;
 .gbar{
     display: flex;
     flex-direction: row;
-    margin: 10px;
+    margin: 5px;
     font-size: 11pt;
     align-items: center;
     text-align: center;
@@ -122,9 +124,25 @@ text-decoration: none;
 color: #ee810b;
 }
 
-/* .gbtn a:hover{
+.gbtn:hover {
+    -webkit-animation: rainbow 4s steps(36) infinite;
+}
 
-} */
+@-webkit-keyframes rainbow {
+    from { -webkit-filter:hue-rotate(10deg); }
+    to { -webkit-filter:hue-rotate(360deg); }
+}
+
+@keyframes rainbow {
+    from {
+    -webkit-filter:hue-rotate(10deg);
+    filter:hue-rotate(10deg);
+}
+to {
+    -webkit-filter:hue-rotate(360deg);
+    filter:hue-rotate(360deg);
+    }
+  }
 
 .warning{
     color: red;
@@ -154,25 +172,6 @@ color: #ee810b;
     .gallery{
         width: 85%;
         margin: 10px;
+        height: 260px;
     }
 }
-
-.gbtn:hover {
-    -webkit-animation: rainbow 4s steps(36) infinite;
-  }
-  
-  @-webkit-keyframes rainbow {
-     from { -webkit-filter:hue-rotate(10deg); }
-       to { -webkit-filter:hue-rotate(360deg); }
-  }
-  
-  @keyframes rainbow {
-   from {
-      -webkit-filter:hue-rotate(10deg);
-              filter:hue-rotate(10deg);
-      }
-    to {
-      -webkit-filter:hue-rotate(360deg);
-              filter:hue-rotate(360deg);
-      }
-  }
