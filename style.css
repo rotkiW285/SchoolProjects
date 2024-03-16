@@ -101,6 +101,8 @@ justify-content: center;
     font-size: 11pt;
     align-items: center;
     text-align: center;
+    justify-content: center;
+    height: 50px;
 }
 
 .gtext{
@@ -113,8 +115,12 @@ float: left;
 
 .gbtn{
     display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
     padding: 5px;
     width: 30%;
+    height: 100%;
 }
 
 .gbtn a{
