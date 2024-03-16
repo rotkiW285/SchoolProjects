@@ -97,7 +97,7 @@ justify-content: center;
 .gbar{
     display: flex;
     flex-direction: row;
-    margin: 5px;
+    margin: 5px 10px 5px 10px;
     font-size: 11pt;
     align-items: center;
     text-align: center;
@@ -173,5 +173,8 @@ to {
         width: 85%;
         margin: 10px;
         height: 260px;
+    }
+    .gbar{
+        margin: 10px;
     }
 }
