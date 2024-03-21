@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 2px;
+            box-sizing: border-box;
+        }
+
+        #gc {
+
+            display: grid;
+            padding: 0;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: 100px 150px 200px 100px 100px 100px;
+            grid-template-areas: "d1 d2 d3 d4"
+                "d5 d5 d5 d5"
+                "d6 d7 d7 d8"
+                "d9 d7 d7 d10"
+                "d9 d7 d7 d11"
+                "d12 d12 d13 d13";
+        }
+
+        .gi {
+            border: 1px solid black;
+            padding: 0;
+        }
+
+        .d1 {
+            grid-area: d1;
+        }
+
+        .d2 {
+            grid-area: d2;
+        }
+
+        .d3 {
+            grid-area: d3;
+        }
+
+        .d4 {
+            grid-area: d4;
+        }
+
+        .d5 {
+            grid-area: d5;
+            background-image: url(baner.jpg);
+            background-size: cover;
+        }
+
+        .d6 {
+            grid-area: d6;
+            text-align: justify;
+            padding: 0px 10px 0px 10px;
+        }
+
+        .d6 h1 {
+            text-align: center;
+        }
+
+        .d7 {
+            grid-area: d7;
+        }
+
+        .d8 {
+            grid-area: d8;
+            display: flex;
+            justify-content: center;
+            text-align: center;
+        }
+
+        .d9 {
+            grid-area: d9;
+            text-align: justify;
+            padding: 0px 10px 0px 10px;
+        }
+
+        .d9 h1 {
+            text-align: center;
+        }
+
+        .d10 {
+            grid-area: d10;
+        }
+
+        .d10 ul {
+            margin-left: 20px;
+        }
+
+        .d11 {
+            grid-area: d11;
+            background-image: url(picture1.jpg);
+            background-size: cover;
+            background-size: 35%;
+        }
+
+        .d12 {
+            grid-area: d12;
+            padding: 5px;
+        }
+
+        .d13 {
+            grid-area: d13;
+            padding: 5px;
+        }
+
+        #gc2 {
+            height: 100%;
+            display: grid;
+            padding: 20px;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(4, 1fr);
+            grid-template-areas: "a1 a1 a2"
+                "a3 a4 a2"
+                "a5 a6 a6"
+                "a7 a7 a8";
+        }
+
+        .gi2 {
+            border: 1px solid black;
+        }
+
+        .a1 {
+            grid-area: a1;
+            background-image: url(zdj4.jpg);
+            background-size: cover;
+        }
+
+        .a2 {
+            grid-area: a2;
+            background-image: url(zdj7.jpg);
+            background-size: cover;
+        }
+
+        .a3 {
+            grid-area: a3;
+            background-image: url(zdj8.jpg);
+            background-size: cover;
+        }
+
+        .a4 {
+            grid-area: a4;
+            background-image: url(zdj9.jpg);
+            background-size: cover;
+        }
+
+        .a5 {
+            grid-area: a5;
+            background-image: url(zdj10.jpg);
+            background-size: cover;
+        }
+
+        .a6 {
+            grid-area: a6;
+            background-image: url(zdj13.jpg);
+            background-size: cover;
+        }
+
+        .a7 {
+            grid-area: a7;
+            background-image: url(zdj14.jpg);
+            background-size: cover;
+        }
+
+        .a8 {
+            grid-area: a8;
+            background-image: url(zdj15.jpg);
+            background-size: cover;
+        }
+
+        .LINK {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        .link1 {
+            border: 1px solid black;
+            background-color: cornflowerblue;
+            border-radius: 50px;
+
+        }
+
+        .link1:hover {
+            background-color: darkblue;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div id="gc">
+        <div class="gi d1 LINK"><a href="" class="link1">Link1</a></div>
+        <div class="gi d2 LINK"><a href="" class="link1">Link2</a></div>
+        <div class="gi d3 LINK"><a href="" class="link1">Link3</a></div>
+        <div class="gi d4 LINK"><a href="" class="link1">Link4</a></div>
+        <div class="gi d5"></div>
+        <div class="gi d6">
+            <h1>Lorem, ipsum dolor.</h1>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus officiis omnis autem est? Necessitatibus,
+            cum eius? Reprehenderit commodi explicabo facilis, error voluptatem odio maxime, culpa neque, qui aliquid
+            nesciunt quod.
+        </div>
+        <div class="gi d7">
+            <div id="gc2">
+                <div class="gi2 a1"></div>
+                <div class="gi2 a2"></div>
+                <div class="gi2 a3"></div>
+                <div class="gi2 a4"></div>
+                <div class="gi2 a5"></div>
+                <div class="gi2 a6"></div>
+                <div class="gi2 a7"></div>
+                <div class="gi2 a8"></div>
+            </div>
+        </div>
+        <div class="gi d8">
+            <form>
+                <label for="login" min="5" maxlenght="5">Logowanie</label> <br>
+                <input type="text"> <br>
+                <input type="submit">
+
+            </form>
+        </div>
+        <div class="gi d9">
+            <h1>Lorem, ipsum dolor.</h1>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque reprehenderit, veritatis iure accusamus
+            ratione quisquam saepe, perferendis libero, maxime est ex tempore porro voluptatum eos. Saepe vitae
+            cupiditate ex eum!
+        </div>
+        <div class="gi d10">
+            Wiewióra:
+            <ul>
+                <li>1 Wiewióra</li>
+                <li>2 Wiewióra</li>
+                <li>3 Wiewióra</li>
+            </ul>
+        </div>
+        <div class="gi d11"></div>
+        <div class="gi d12">
+            Nasz adres: <br>
+            Tarnowskie Góry ul. Sienkiewicza 23
+        </div>
+        <div class="gi d13">
+            Telefon: 535636325 <br>
+            Email: email <br>
+        </div>
+    </div>
+</body>
+
+</html>
