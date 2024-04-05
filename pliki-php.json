@@ -82,5 +82,11 @@
     "date": "22-03-2024",
     "type": "ZIP",
     "download": "zip/cie07.zip"
+  },
+  {
+    "name": "Baza danych Oceny (SQL)",
+    "date": "05-04-2024",
+    "type": "SQL",
+    "download": "files/oceny.sql"
   }
 ]
