@@ -1,0 +1,11 @@
+1. instalacja ksampa
+2. z strony pl.wordpress.org pobrac to guwno
+3. unzip, zmiena nazwy folderu i wrzucany go do htdocsów xamppa
+4. tworzymy baze danych z pl znakami (kodowanie)
+5. w pregladarce wchodzimy na localhost/nazwafolderu
+6. konfigurujemy baze danych
+7. podajemy baze danych w stronie
+8. login 'root' has³o '', nazwa serwera localhost
+9. instalujemy to guwno xd
+10. podajemy nazwe witryny, login i haslo admina ktore warto by bylo zapamietac, bo sluzy do logowania do panelu admina
+11. zeby przejsc do panelu admina trzeba localhost/nazwafoderu/wp-admin 
