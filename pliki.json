@@ -1,122 +1,128 @@
 [
   {
     "name": "E-ZESZYT",
-    "date": "",
+    "date": "🗒️",
     "type": "LINK",
-    "download": "https://docs.google.com/document/d/1wmfDnKYrY6Kq8SfuyD4WRn_7wZglFRAQYvtqOQOnuKw/edit?usp=sharing"
+    "download": "https://docs.google.com/document/d/1wmfDnKYrY6Kq8SfuyD4WRn_7wZglFRAQYvtqOQOnuKw"
   },
   {
-    "name": "5 plików exel (informatyka)",
+    "name": "[INF] 5 plików Exel",
     "date": "??-??-2023",
     "type": "ZIP",
     "download": "zip/exele.zip"
   },
   {
-    "name": "Egzaminy styczeń 2023 (Zalecenia)",
+    "name": "[INNE] Egzaminy styczeń 2023 (Zalecenia)",
     "date": "??-??-2023",
     "type": "ZIP",
     "download": "zip/egzaminy2023.zip"
   },
   {
-    "name": "Ostatnie Słowa",
-    "date": "chyba 2022",
+    "name": "[INNE] Ostatnie Słowa",
+    "date": "08-11-2021",
     "type": "TXT",
     "download": "files/ostatnie_slowa.txt"
   },
   {
-    "name": "Arkusze INF.02 sesja czerwiec 2023",
+    "name": "[INNE] Arkusze INF.02 sesja czerwiec 2023",
     "date": "08-06-2023",
     "type": "ZIP",
     "download": "zip/inf02-23.zip"
   },
   {
-    "name": "PDFy do nauki do spr",
+    "name": "[PBD] PDFy do nauki do spr",
     "date": "17-11-2023",
     "type": "ZIP",
     "download": "zip/cie01.zip"
   },
   {
-    "name": "Zadanie 'Sklep komputerowy'",
+    "name": "[PBD] Zadanie 'Sklep komputerowy'",
     "date": "???",
     "type": "ZIP",
     "download": "zip/cie02.zip"
   },
   {
-    "name": "Baza danych klienci",
+    "name": "[PBD] Baza danych klienci",
     "date": "21-11-2023",
     "type": "PLIK ACCESS",
     "download": "files/211123.accdb"
   },
   {
-    "name": "Sprawdzian -> uczniowie",
+    "name": "[PBD] Sprawdzian -> uczniowie",
     "date": "24-11-2023",
     "type": "PLIK ACCESS",
     "download": "files/spr241123.accdb"
   },
   {
-    "name": "PDF do spr (Typy danych)",
+    "name": "[WIAI] 3 efekty GIMP",
+    "date": "05-12-2023",
+    "type": "ZIP",
+    "download": "zip/231205-wiai.zip"
+  },
+  {
+    "name": "[SBD] PDF do spr (Typy danych)",
     "date": "02-01-2024",
     "type": "PDF",
     "download": "files/Typy-danych.pdf"
   },
   {
-    "name": "Kartkówka -> uczniowie",
+    "name": "[PBD] Kartkówka -> uczniowie",
     "date": "16-02-2024",
     "type": "ZIP",
     "download": "zip/cie05.zip"
   },
   {
-    "name": "Baza danych 'Oceny 1' uzupełniona i z poleceniami",
+    "name": "[PBD] Baza danych 'Oceny 1' uzupełniona i z poleceniami",
     "date": "16-02-2024",
     "type": "ZIP",
     "download": "zip/cie03.zip"
   },
   {
-    "name": "Sprawdzian SBD + rozwiązanie",
+    "name": "[SBD] Sprawdzian + rozwiązanie",
     "date": "16-02-2024",
     "type": "ZIP",
     "download": "zip/cie04.zip"
   },
   {
-    "name": "Baza danych 'Oceny 2' NIEuzupełniona",
+    "name": "[PBD] Baza danych 'Oceny 2' NIEuzupełniona",
     "date": "20-02-2024",
     "type": "PLIK ACCESS",
     "download": "files/Oceny-2.accdb"
   },
   {
-    "name": "Template nowych baz danych filmoteka i wyjazdy_firmowe",
+    "name": "[SBD] Template nowych baz danych filmoteka i wyjazdy_firmowe",
     "date": "23-02-2024",
     "type": "TXT",
     "download": "files/filmoteka-wyjazdy_firmowe.txt"
   },
   {
-    "name": "Baza danych hurtownia",
+    "name": "[SBD] Baza danych hurtownia",
     "date": "01-03-2024",
     "type": "SQL",
     "download": "files/hurtownia.sql"
   },
   {
-    "name": "Zestaw powtórkowy na sprawdzian SBD z DML",
+    "name": "[SBD] Zestaw powtórkowy na sprawdzian z DML",
     "date": "15-03-2024",
     "type": "ZIP",
     "download": "zip/cie06.zip"
   },
   {
-    "name": "Sprawdzian z DML + rozwiązanie (SBD)",
+    "name": "[SBD] Sprawdzian z DML + rozwiązanie",
     "date": "22-03-2024",
     "type": "ZIP",
     "download": "zip/cie07.zip"
   },
   {
-    "name": "Baza danych Oceny (SQL)",
+    "name": "[SBD] Baza danych Oceny",
     "date": "05-04-2024",
     "type": "SQL",
     "download": "files/oceny.sql"
   },
   {
-    "name": "Notatka WIAI z instalacji WP",
+    "name": "[WIAI] Notatka z instalacji WordPressa na XAMPP",
     "date": "11-04-2024",
-    "type": "txt",
+    "type": "TXT",
     "download": "files/notatka_WIAI_110424.txt"
   }
 ]
