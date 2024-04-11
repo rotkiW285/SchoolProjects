@@ -6,6 +6,30 @@
     "download": "https://docs.google.com/document/d/1wmfDnKYrY6Kq8SfuyD4WRn_7wZglFRAQYvtqOQOnuKw/edit?usp=sharing"
   },
   {
+    "name": "5 plików exel (informatyka)",
+    "date": "??-??-2023",
+    "type": "ZIP",
+    "download": "zip/exele.zip"
+  },
+  {
+    "name": "Egzaminy styczeń 2023 (Zalecenia)",
+    "date": "??-??-2023",
+    "type": "ZIP",
+    "download": "zip/egzaminy2023.zip"
+  },
+  {
+    "name": "Ostatnie Słowa",
+    "date": "chyba 2022",
+    "type": "TXT",
+    "download": "files/ostatnie_slowa.txt"
+  },
+  {
+    "name": "Arkusze INF.02 sesja czerwiec 2023",
+    "date": "08-06-2023",
+    "type": "ZIP",
+    "download": "zip/inf02-23.zip"
+  },
+  {
     "name": "PDFy do nauki do spr",
     "date": "17-11-2023",
     "type": "ZIP",
@@ -13,7 +37,7 @@
   },
   {
     "name": "Zadanie 'Sklep komputerowy'",
-    "date": "Nieznana",
+    "date": "???",
     "type": "ZIP",
     "download": "zip/cie02.zip"
   },
