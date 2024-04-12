@@ -130,5 +130,11 @@
     "date": "12-04-2024",
     "type": "SQL",
     "download": "files/oceny2_2.sql"
+  },
+  {
+    "name": "[SBD] Rozwiązania do bazy daych Oceny2",
+    "date": "12-04-2024",
+    "type": "PLIK ACCESS",
+    "download": "files/Oceny2_rozwiazania.accdb"
   }
 ]
