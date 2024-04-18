@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<form name="formularz">
+<input type="checkbox" name="zaznacz" id="cb" onchange="przeslij()"><br>
+</form>
+<div id="wynik"></div>
+<script>
+    function przeslij(){
+        if(document.getElementById('cb').checked)
+        {
+            zaznacz=("Tak")
+            document.getElementById("wynik").innerHTML = "zaznacone: " + zaznacz
+        }
+        else
+        {
+            zaznacz=("Nie")
+            document.getElementById("wynik").innerHTML = "zaznacone: " + zaznacz
+        }
+    }
+</script>
+</body>
+</html>
