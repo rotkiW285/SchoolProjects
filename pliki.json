@@ -132,9 +132,15 @@
     "download": "files/oceny2_2.sql"
   },
   {
-    "name": "[SBD] Rozwiązania do bazy daych Oceny2",
+    "name": "[PBD] Rozwiązania do bazy daych Oceny2 (ACCESS)",
     "date": "12-04-2024",
     "type": "PLIK ACCESS",
     "download": "files/Oceny2_rozwiazania.accdb"
+  },
+  {
+    "name": "[SBD] Rozwiązania do bazy daych Oceny2 (SQL)",
+    "date": "19-04-2024",
+    "type": "PDF",
+    "download": "files/Oceny2_rozwiazania.pdf"
   }
 ]
