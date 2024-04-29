@@ -108,7 +108,7 @@
     "download": "zip/cie06.zip"
   },
   {
-    "name": "[SBD] Sprawdzian z DML + rozwiązanie",
+    "name": "[SBD] Sprawdzian z DML",
     "date": "22-03-2024",
     "type": "ZIP",
     "download": "zip/cie07.zip"
@@ -132,15 +132,27 @@
     "download": "files/oceny2_2.sql"
   },
   {
-    "name": "[PBD] Rozwiązania do bazy daych Oceny2 (ACCESS)",
+    "name": "[PBD] Rozwiązania do bazy danych Oceny2 (ACCESS)",
     "date": "12-04-2024",
     "type": "PLIK ACCESS",
     "download": "files/Oceny2_rozwiazania.accdb"
   },
   {
-    "name": "[SBD] Rozwiązania do bazy daych Oceny2 (SQL)",
+    "name": "[PBD] Sprawdzian kwerendy",
+    "date": "12-04-2024",
+    "type": "ZIP",
+    "download": "zip/cie08.zip"
+  },
+  {
+    "name": "[SBD] Rozwiązania do bazy danych Oceny2 (SQL)",
     "date": "19-04-2024",
     "type": "PDF",
     "download": "files/Oceny2_rozwiazania.pdf"
+  },
+  {
+    "name": "[SBD] Sprawdzan połączenia tabel",
+    "date": "26-04-2024",
+    "type": "ZIP",
+    "download": "zip/cie08.zip"
   }
 ]
