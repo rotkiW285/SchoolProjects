@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Zad4</title>
+<script>
+    function suma() {
+        var suma = 0;
+        var pola = document.querySelectorAll('input[type="text"]');
+        pola.forEach(function(pole) {
+            var checkbox = pole.nextElementSibling;
+            if (checkbox.checked) {
+                var liczba = parseInt(pole.value);
+                if (!isNaN(liczba)) {
+                    suma += liczba;
+                }
+            }
+        });
+        document.getElementById('wynik').innerHTML = "Suma liczb zaznaczonych pól: " + suma;
+    }
+</script>
+</head>
+<body>
+
+<form>
+    <label for="liczba1">Liczba 1:</label>
+    <input type="text" id="liczba1" name="liczba1">
+    <input type="checkbox" id="checkbox1" name="checkbox1" onchange="suma()"><br>
+    
+    <label for="liczba2">Liczba 2:</label>
+    <input type="text" id="liczba2" name="liczba2">
+    <input type="checkbox" id="checkbox2" name="checkbox2" onchange="suma()"><br>
+    
+    <label for="liczba3">Liczba 3:</label>
+    <input type="text" id="liczba3" name="liczba3">
+    <input type="checkbox" id="checkbox3" name="checkbox3" onchange="suma()"><br>
+    
+    <label for="liczba4">Liczba 4:</label>
+    <input type="text" id="liczba4" name="liczba4">
+    <input type="checkbox" id="checkbox4" name="checkbox4" onchange="suma()"><br>
+    
+    <label for="liczba5">Liczba 5:</label>
+    <input type="text" id="liczba5" name="liczba5">
+    <input type="checkbox" id="checkbox5" name="checkbox5" onchange="suma()"><br>
+</form>
+
+<div id="wynik"></div>
+
+</body>
+</html>

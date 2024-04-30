@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Zad5</title>
+<script>
+    function obliczKoszt() {
+        var liczbaOgloszen = parseInt(document.getElementById('liczbaOgloszen').value);
+        var klient = document.getElementById('stalyKlient').checked;
+        var koszt = 0;
+        
+        if (liczbaOgloszen >= 1 && liczbaOgloszen <= 50) {
+            koszt = liczbaOgloszen * 2;
+        } else if (liczbaOgloszen > 50 && liczbaOgloszen <= 100) {
+            koszt = liczbaOgloszen * 1.5;
+        } else if (liczbaOgloszen > 100) {
+            koszt = liczbaOgloszen;
+        }
+        
+        if (klient) {
+            koszt *= 0.8;
+        }
+        
+        document.getElementById('wynik').innerHTML = "Koszt ogłoszenia: " + koszt.toFixed(2) + " zł";
+    }
+</script>
+</head>
+<body>
+
+<form>
+    <label for="liczbaOgloszen">Liczba ogłoszeń:</label>
+    <input type="text" id="liczbaOgloszen" name="liczbaOgloszen">
+    <br>
+    <input type="checkbox" id="stalyKlient" name="stalyKlient">
+    <label for="stalyKlient">Stały klient</label><br>
+    <button type="button" onclick="obliczKoszt()">Oblicz koszt</button>
+</form>
+
+<div id="wynik"></div>
+
+</body>
+</html>

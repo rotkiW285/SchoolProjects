@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Zad8</title>
+<script>
+    function obliczKoszt() {
+        var BiletyNormalne = parseInt(document.getElementById('BiletyNormalne').value);
+        var BiletyUlgowe = parseInt(document.getElementById('BiletyUlgowe').value);
+        var iloscGodzin = parseInt(document.getElementById('iloscGodzin').value);
+        var kartaDuzejRodziny = document.getElementById('kartaDuzejRodziny').checked;
+        
+        var KosztNormalnego = 10;
+        var KosztUlgowego = 5;
+        var KosztCalodniowyNormalny = 50;
+        var KosztCalodniowyUlgowy = 25;
+        
+        var kosztWstepu = 0;
+        
+        kosztWstepu += BiletyNormalne * KosztNormalnego;
+        kosztWstepu += BiletyUlgowe * KosztUlgowego;
+        
+        if (kartaDuzejRodziny) {
+            kosztWstepu *= 0.9; 
+        }
+        
+        if (iloscGodzin > 4) {
+            kosztWstepu += KosztCalodniowyNormalny;
+            kosztWstepu += KosztCalodniowyUlgowy;
+        }
+        
+        var darmoweBiletyNormalne = Math.floor(BiletyUlgowe / 15);
+        kosztWstepu -= darmoweBiletyNormalne * KosztNormalnego;
+        
+        document.getElementById('wynik').innerHTML = "Całkowity koszt wstępu do aquaparku: " + kosztWstepu.toFixed(2) + " zł";
+    }
+</script>
+</head>
+<body>
+
+<form>
+    <label for="BiletyNormalne">Ilość biletów normalnych:</label>
+    <input type="text" id="BiletyNormalne" name="BiletyNormalne">
+    <br>
+    <label for="BiletyUlgowe">Ilość biletów ulgowych:</label>
+    <input type="text" id="BiletyUlgowe" name="BiletyUlgowe">
+    <br>
+    <label for="iloscGodzin">Ilość godzin:</label>
+    <input type="text" id="iloscGodzin" name="iloscGodzin">
+    <br>
+    <input type="checkbox" id="kartaDuzejRodziny" name="kartaDuzejRodziny">
+    <label for="kartaDuzejRodziny">Karta dużej rodziny</label><br>
+    <button type="button" onclick="obliczKoszt()">Oblicz</button>
+</form>
+
+<div id="wynik"></div>
+
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Zad6</title>
+<script>
+    function obliczKoszt() {
+        var iloscCegiel = parseInt(document.getElementById('iloscCegiel').value);
+        var ceglaPremium = document.getElementById('ceglaPremium').checked;
+        var kosztCegly = 2;
+        var wagaCegly = 1.5;
+        
+        if (ceglaPremium) {
+            kosztCegly *= 1.3; // Cegła premium jest o 30% droższa
+            wagaCegly = 1.75; // Waga cegły premium
+        }
+        
+        var kosztZakupu = iloscCegiel * kosztCegly;
+        var wagaZakupu = iloscCegiel * wagaCegly;
+        
+        var wynik = "Zakupiona ilość cegieł: " + iloscCegiel + ", cegła ";
+        if (ceglaPremium) {
+            wynik += "premium";
+        } else {
+            wynik += "standardowa";
+        }
+        wynik += ", koszt zakupu cegieł: " + kosztZakupu.toFixed(2) + " zł, waga cegieł: " + wagaZakupu.toFixed(2) + " kg";
+        
+        document.getElementById('wynik').innerHTML = wynik;
+    }
+</script>
+</head>
+<body>
+
+<form>
+    <label for="iloscCegiel">Ilość cegieł:</label>
+    <input type="text" id="iloscCegiel" name="iloscCegiel">
+    <br>
+    <input type="checkbox" id="ceglaPremium" name="ceglaPremium">
+    <label for="ceglaPremium">Cegła premium</label><br>
+    <button type="button" onclick="obliczKoszt()">Oblicz koszt</button>
+</form>
+
+<div id="wynik"></div>
+
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Zad1</title>
+<script>
+    function obliczKoszt() {
+        var iloscGosci = parseInt(document.getElementById('iloscGosci').value);
+        var poprawiny = document.getElementById('poprawiny').checked;
+        var kosztOsoby = 100;
+        var kosztWesela = iloscGosci * kosztOsoby;
+        
+        if (poprawiny) {
+            kosztWesela *= 1.3;
+        }
+        
+        document.getElementById('wynik').innerHTML = "Całkowity koszt wesela: " + kosztWesela + " zł";
+    }
+</script>
+</head>
+<body>
+
+<form>
+    <label for="iloscGosci">Ilość gości:</label>
+    <input type="text" id="iloscGosci" name="iloscGosci" oninput="obliczKoszt()">
+    <br>
+    <input type="checkbox" id="poprawiny" name="poprawiny" onchange="obliczKoszt()">
+    <label for="poprawiny">Poprawiny</label><br>
+</form>
+
+<div id="wynik"></div>
+
+</body>
+</html>

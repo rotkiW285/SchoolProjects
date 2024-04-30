@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Zad3</title>
+<script>
+    function oblicz(operacja) {
+        var a = parseFloat(document.getElementById('a').value);
+        var b = parseFloat(document.getElementById('b').value);
+        var wynik = "";
+        
+        if (isNaN(a) || isNaN(b)) {
+            wynik = "Proszę wypełnić oba pola tekstowe.";
+        } else {
+            switch (operacja) {
+                case 'dodawanie':
+                    wynik = a + b;
+                    break;
+                case 'odejmowanie':
+                    wynik = a - b;
+                    break;
+                case 'mnozenie':
+                    wynik = a * b;
+                    break;
+                case 'dzielenie':
+                    wynik = a / b;
+                    break;
+                case 'reszta':
+                    wynik = a % b;
+                    break;
+                case 'dzielenieCal':
+                    wynik = Math.floor(a / b);
+                    break;
+            }
+        }
+        
+        document.getElementById('wynik').innerHTML = "Wynik: " + wynik;
+    }
+</script>
+</head>
+<body>
+
+<form>
+    <label for="a">Liczba a:</label>
+    <input type="text" id="a" name="a"><br>
+    <label for="b">Liczba b:</label>
+    <input type="text" id="b" name="b"><br>
+    <button type="button" onclick="oblicz('dodawanie')">Dodawanie</button>
+    <button type="button" onclick="oblicz('odejmowanie')">Odejmowanie</button>
+    <button type="button" onclick="oblicz('mnozenie')">Mnożenie</button>
+    <button type="button" onclick="oblicz('dzielenie')">Dzielenie</button>
+    <button type="button" onclick="oblicz('reszta')">Reszta z dzielenia</button>
+    <button type="button" onclick="oblicz('dzielenieCal')">Dzielenie całkowite</button>
+</form>
+
+<div id="wynik"></div>
+
+</body>
+</html>

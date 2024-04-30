@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Zad2</title>
+<script>
+    function obliczKoszt() {
+        var kilometry = parseInt(document.getElementById('kilometry').value);
+        var gdansk = document.getElementById('gdansk').checked;
+        var kosztkm = 1;
+        var kosztDowozu = kilometry * 2 * kosztkm;
+        
+        if (gdansk) {
+            document.getElementById('komunikat').innerHTML = "Dowieziemy Twoją pizzę za darmo.";
+        } else {
+            document.getElementById('komunikat').innerHTML = "Dowóz będzie Cię kosztował " + kosztDowozu + " zł.";
+        }
+    }
+</script>
+</head>
+<body>
+
+<form>
+    <label for="kilometry">Ilość kilometrów:</label>
+    <input type="text" id="kilometry" name="kilometry" oninput="obliczKoszt()">
+    <br>
+    <input type="checkbox" id="gdansk" name="gdansk" onchange="obliczKoszt()">
+    <label for="gdansk">Jestem z Gdańska</label><br>
+</form>
+
+<div id="komunikat"></div>
+
+</body>
+</html>

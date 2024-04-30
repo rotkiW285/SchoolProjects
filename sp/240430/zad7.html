@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Zad7</title>
+<script>
+    function obliczKoszt() {
+        var iloscCegiel = parseInt(document.getElementById('iloscCegiel').value);
+        var ceglaPremium = document.getElementById('ceglaPremium').checked;
+        var iloscKilometrow = parseInt(document.getElementById('iloscKilometrow').value);
+        var kosztCegly = 2;
+        var wagaCegly = 1.5;
+        var kosztTransportu = 0;
+        
+        if (ceglaPremium) {
+            kosztCegly *= 1.3;
+            wagaCegly = 1.75;
+        }
+        
+        var kosztZakupu = iloscCegiel * kosztCegly;
+        var wagaZakupu = iloscCegiel * wagaCegly;
+        
+        var dodatkowaWaga = wagaZakupu % 10 !== 0 ? 10 - (wagaZakupu % 10) : 0;
+        var iloscRozpoczetych10Kg = Math.ceil(wagaZakupu / 10);
+        kosztTransportu = iloscRozpoczetych10Kg * (iloscKilometrow * 0.5);
+        
+        var wynik = "Zakupiona ilość cegieł: " + iloscCegiel + ", cegła ";
+        if (ceglaPremium) {
+            wynik += "premium";
+        } else {
+            wynik += "standardowa";
+        }
+        wynik += ", koszt zakupu cegieł: " + kosztZakupu.toFixed(2) + " zł, waga cegieł: " + wagaZakupu.toFixed(2) + " kg";
+        wynik += ", koszt transportu: " + kosztTransportu.toFixed(2) + " zł";
+        
+        document.getElementById('wynik').innerHTML = wynik;
+    }
+</script>
+</head>
+<body>
+
+<form>
+    <label for="iloscCegiel">Ilość cegieł:</label>
+    <input type="text" id="iloscCegiel" name="iloscCegiel">
+    <br>
+    <input type="checkbox" id="ceglaPremium" name="ceglaPremium">
+    <label for="ceglaPremium">Cegła premium</label><br>
+    <label for="iloscKilometrow">Ilość kilometrów:</label>
+    <input type="text" id="iloscKilometrow" name="iloscKilometrow">
+    <br>
+    <button type="button" onclick="obliczKoszt()">Oblicz koszt</button>
+</form>
+
+<div id="wynik"></div>
+
+</body>
+</html>
