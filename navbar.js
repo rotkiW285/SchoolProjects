@@ -5,7 +5,6 @@ class Navbar {
       { title: "STARSZAKI", url: "starszaki.html" },
       { title: "INNE STRONY", url: "innestrony.html" },
       { title: "SBD, PBD i INNE", url: "inne.html" },
-      { title: "PYTHON", url: "python.html" },
       { title: "EE-09", url: "https://jankupczyk.github.io/EE-09/" },
       { title: "© rotkiW285", url: "info.html" },
     ];
