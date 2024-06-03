@@ -1,4 +1,5 @@
 # <img src="/favicon/apple-touch-icon.png" height="25px" width="25px"> SchoolProjects V2.1
+
 Some weird things I do on lessons
 
 [Link](https://sp.285.works)
