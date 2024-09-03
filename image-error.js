@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", function () {
     galleryImages.forEach(function (img) {
         img.onerror = function () {
             this.onerror = null;
-            this.src = 'error.webp';
+            this.src = 'img/error.webp';
         };
     });
 });
