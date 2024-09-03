@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<select name="lista" onchange="przeslij()">
+<option value="Pierwsza">jeden</option>
+<option value="Druga">dwa</option>
+</select>
+<div id="wynik"></div>
+<br><br>
+
+
+<form onchange="wyb()">
+<input type="radio" name="pole" value="0">Bialy<br>
+<input type="radio" name="pole" value="1">czarny<br>
+<input type="radio" name="pole" value="2">zielony<br>
+</form>
+<p id="bb"></p>
+<br><br>
+<a href="index2.html">wesele</a>
+<script>
+// var lista = document.forms.formularz.elements["lista"].value
+// if(lista == "Pierwsza"){
+//     document.getElementById("wynik").innerHTML = "Z listywybrano: " + lista;
+// }
+// else{
+//     document.getElementById("wynik").innerHTML = "Z listywybrano: " + lista;
+// }
+
+function wyb(){
+    let b = document.getElementsByName("pole")
+    if(b[0].checked){
+        document.getElementById("bb").innerText="Zeilony"
+    }
+    if(b[1].checked){
+        document.getElementById("bb").innerText="hkghg"
+    }
+    if(b[2].checked){
+        document.getElementById("bb").innerText="jhgg"
+    }
+}
+</script>
+</body>
+</html>

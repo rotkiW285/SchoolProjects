@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kalkulator kosztów wesela</title>
+</head>
+<body>
+
+<form id="weddingForm">
+  <label for="guests">Ilość gości:</label>
+  <input type="number" id="guests" name="guests" min="0">
+  <br><br>
+  <label for="reception">Poprawiny:</label>
+  <input type="checkbox" id="reception" name="reception">
+</form>
+
+<p id="totalCost">Calkowity koszt wesela: 0 zł</p>
+
+<script>
+document.getElementById('weddingForm').addEventListener('change', function() {
+  var guests = document.getElementById('guests').value;
+  var isReception = document.getElementById('reception').checked;
+  var costPerPerson = 100;
+  var totalCost = guests * costPerPerson;
+  
+  if (isReception) {
+    totalCost *= 1.3;
+  }
+  
+  document.getElementById('totalCost').textContent = "Calkowity koszt wesela: " + totalCost.toFixed(2) + " zł";
+});
+</script>
+
+</body>
+</html>
