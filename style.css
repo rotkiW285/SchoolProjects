@@ -48,6 +48,15 @@ a:visited {
     flex-wrap: wrap;
 }
 
+.zeszyty{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
 .logo {
     display: flex;
     align-items: center;
