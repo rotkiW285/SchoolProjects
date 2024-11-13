@@ -4,7 +4,7 @@ class Navbar {
       { title: "STRONA GŁÓWNA", url: "/" },
       { title: "STARSZAKI", url: "starszaki" },
       { title: "INNE STRONY", url: "innestrony" },
-      { title: "PAI, PBD i INNE", url: "inne" },
+      { title: "INNE", url: "inne" },
       { title: "EE-09", url: "https://jankupczyk.github.io/EE-09/" },
       { title: "© rotkiW285", url: "info" },
     ];
