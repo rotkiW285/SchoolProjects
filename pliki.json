@@ -40,5 +40,11 @@
     "date": "13-11-2024",
     "type": "PDF",
     "download": "files/tablice.pdf"
+  },
+  {
+    "name": "[PAI] Baza danych 'księgarnia' na lekcje 13.11.24",
+    "date": "13-11-2024",
+    "type": "SQL",
+    "download": "files/ksiegarnia.sql"
   }
 ]
