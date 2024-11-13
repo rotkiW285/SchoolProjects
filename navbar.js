@@ -1,12 +1,12 @@
 class Navbar {
   constructor() {
     this.links = [
-      { title: "STRONA GŁÓWNA", url: "index.html" },
-      { title: "STARSZAKI", url: "starszaki.html" },
-      { title: "INNE STRONY", url: "innestrony.html" },
-      { title: "PAI, PBD i INNE", url: "inne.html" },
+      { title: "STRONA GŁÓWNA", url: "/" },
+      { title: "STARSZAKI", url: "starszaki" },
+      { title: "INNE STRONY", url: "innestrony" },
+      { title: "PAI, PBD i INNE", url: "inne" },
       { title: "EE-09", url: "https://jankupczyk.github.io/EE-09/" },
-      { title: "© rotkiW285", url: "info.html" },
+      { title: "© rotkiW285", url: "info" },
     ];
   }
 
