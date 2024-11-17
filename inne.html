@@ -53,6 +53,7 @@
                     <th>Nazwa</th>
                     <th>Data</th>
                     <th>Typ</th>
+                    <th>Przedmiot</th>
                     <th>Pobierz</th>
                 </tr>
             </thead>
@@ -71,16 +72,19 @@
                     const nameCell = document.createElement("td");
                     const dateCell = document.createElement("td");
                     const typeCell = document.createElement("td");
+                    const subjectCell = document.createElement("td");
                     const downloadCell = document.createElement("td");
 
                     nameCell.textContent = record.name;
                     dateCell.textContent = record.date;
                     typeCell.textContent = record.type;
-                    downloadCell.innerHTML = `<a href="${record.download}" target="_blank">Pobierz</a>`;
+                    subjectCell.textContent = record.subject;
+                    downloadCell.innerHTML = `<a href="${record.download}">Pobierz</a>`;
 
                     row.appendChild(nameCell);
                     row.appendChild(dateCell);
                     row.appendChild(typeCell);
+                    row.appendChild(subjectCell);
                     row.appendChild(downloadCell);
 
                     tableBody.appendChild(row);

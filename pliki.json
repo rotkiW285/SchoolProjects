@@ -1,50 +1,58 @@
 [
   {
-    "name": "[INNE] Ostatnie Słowa",
+    "name": "Ostatnie Słowa",
     "date": "08-11-2021",
     "type": "TXT",
+    "subject": "INNE",
     "download": "files/ostatnie_slowa.txt"
   },
   {
-    "name": "[INNE] Arkusze INF.02 sesja czerwiec 2023",
+    "name": "Arkusze INF.02 sesja czerwiec 2023",
     "date": "08-06-2023",
     "type": "ZIP",
+    "subject": "INNE",
     "download": "zip/inf02-23.zip"
   },
   {
     "name": "ROK SZKOLNY 2023/2024 - Wszystkie pliki",
     "date": "04-09-2024",
     "type": "ZIP",
+    "subject": "PAI, PBD",
     "download": "zip/2023-2024.zip"
   },
   {
-    "name": "[PAI] Wszystkie zadania z formularzami i pętlami (T: 23.10.24)",
+    "name": "Wszystkie zadania z formularzami i pętlami (T: 23.10.24)",
     "date": "29-10-2024",
     "type": "ZIP",
+    "subject": "PAI",
     "download": "zip/zadania_formularze_z_petlami.zip"
   },
   {
-    "name": "[PBD] Odpowiedzi GR. A KRK",
+    "name": "Odpowiedzi GR. A KRK",
     "date": "05-11-2024",
     "type": "PNG",
+    "subject": "PBD",
     "download": "files/051124.png"
   },
   {
-    "name": "[PAI] Sprawdzian 061124",
+    "name": "Sprawdzian 061124",
     "date": "06-11-2024",
     "type": "ZIP",
+    "subject": "PAI",
     "download": "files/spr061124.zip"
   },
   {
-    "name": "[PAI] PDF z lekcji 'Tablice'",
+    "name": "PDF z lekcji 'Tablice'",
     "date": "13-11-2024",
     "type": "PDF",
+    "subject": "PAI",
     "download": "files/tablice.pdf"
   },
   {
-    "name": "[PAI] Baza danych 'księgarnia' na lekcje 13.11.24",
+    "name": "Baza danych 'księgarnia' na lekcje 13.11.24",
     "date": "13-11-2024",
     "type": "SQL",
+    "subject": "PAI",
     "download": "files/ksiegarnia.sql"
   }
 ]
