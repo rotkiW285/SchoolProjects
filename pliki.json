@@ -54,5 +54,12 @@
     "type": "SQL",
     "subject": "PAI",
     "download": "files/ksiegarnia.sql"
+  },
+  {
+    "name": "PDF z lekcji 'Bazy proceduralne'",
+    "date": "20-11-2024",
+    "type": "PDF",
+    "subject": "PAI",
+    "download": "files/bazy_proceduralnie.pdf"
   }
 ]
