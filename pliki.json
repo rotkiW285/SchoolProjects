@@ -61,5 +61,12 @@
     "type": "PDF",
     "subject": "PAI",
     "download": "files/bazy_proceduralnie.pdf"
+  },
+  {
+    "name": "5 PDFów z ostatnich zajęć PAI",
+    "date": "18-12-2024",
+    "type": "ZIP",
+    "subject": "PAI",
+    "download": "zip/pdfy-koniecroku.zip"
   }
 ]
