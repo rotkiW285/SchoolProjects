@@ -68,5 +68,12 @@
     "type": "ZIP",
     "subject": "PAI",
     "download": "zip/pdfy-koniecroku.zip"
+  },
+  {
+    "name": "Wytyczne do wielkiego projektu",
+    "date": "07-01-2025",
+    "type": "PDF",
+    "subject": "PSBD/PSAI",
+    "download": "files/Wytyczne_do_projektu_5it1_gr1.pdf"
   }
 ]
