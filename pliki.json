@@ -75,5 +75,12 @@
     "type": "PDF",
     "subject": "PSBD/PSAI",
     "download": "files/Wytyczne_do_projektu_5it1_gr1.pdf"
+  },
+  {
+    "name": "Arkusze INF.03 sesja zima 2025",
+    "date": "08-04-2025",
+    "type": "ZIP",
+    "subject": "INNE",
+    "download": "zip/inf.03_zima_2025.zip"
   }
 ]
