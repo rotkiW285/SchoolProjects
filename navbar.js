@@ -1,8 +1,7 @@
 class Navbar {
   constructor() {
     this.links = [
-      { title: "STRONA GŁÓWNA", url: "/" },
-      { title: "STARSZAKI", url: "starszaki" },
+      { title: "PROJEKTY", url: "/" },
       { title: "INNE STRONY", url: "innestrony" },
       { title: "PLIKI", url: "pliki" }
     ];
